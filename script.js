@@ -1,1 +1,911 @@
-var _0x1a72=["\x44\x4F\x4D\x43\x6F\x6E\x74\x65\x6E\x74\x4C\x6F\x61\x64\x65\x64","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x63\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x61\x70\x70\x65\x6E\x64","\x72\x61\x6E\x64\x6F\x6D","\x2E\x76\x61\x6C\x2D\x63\x6F\x75\x6E\x74","\x63\x68\x61\x6E\x67\x65","\x76\x61\x6C\x75\x65","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x6D\x69\x6E","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x2E\x76\x61\x6C\x2D\x74\x79\x70\x65","\x66\x6F\x63\x75\x73\x6F\x75\x74","\x66\x6F\x72\x45\x61\x63\x68","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72\x41\x6C\x6C","\x66\x6C\x6F\x6F\x72","\x72\x6F\x75\x6E\x64","\x66\x74\x20","\x69\x6E","\x61\x62\x73","\x70\x6F\x77","\x78","\x79","\x73\x71\x72\x74","\x50\x49","\x73\x69\x6E","\x63\x6F\x73","\x4E\x6F\x6E\x65","\x4D\x75\x6C\x74","","\x73\x70\x6C\x69\x74","\x77\x73\x61\x6D\x66\x70\x74\x6C\x63\x76\x65\x69\x68","\x2E\x76\x61\x6C\x2D\x6D\x75\x74\x61\x74\x69\x6F\x6E","\x2E\x76\x61\x6C\x2D\x6C\x75\x6D\x69\x6E\x6F\x75\x73","\x2E\x76\x61\x6C\x2D\x6D\x75\x6C\x74\x69\x74\x72\x61\x69\x74","\x69\x6E\x70\x75\x74","\x74\x61\x72\x67\x65\x74","\x74\x65\x73\x74","\x73\x6C\x69\x63\x65","\x70\x61\x73\x74\x65","\x74\x65\x78\x74","\x67\x65\x74\x44\x61\x74\x61","\x63\x6C\x69\x70\x62\x6F\x61\x72\x64\x44\x61\x74\x61","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x2E\x76\x61\x6C\x2D\x6D\x75\x74\x61\x74\x69\x6F\x6E\x2C\x20\x2E\x76\x61\x6C\x2D\x6C\x75\x6D\x69\x6E\x6F\x75\x73\x2C\x20\x2E\x76\x61\x6C\x2D\x6D\x75\x6C\x74\x69\x74\x72\x61\x69\x74\x2C\x20\x2E\x76\x61\x6C\x2D\x63\x6F\x75\x6E\x74","\x64\x61\x74\x61\x2D\x73\x65\x6C","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x70\x75\x73\x68","\x63\x6C\x69\x63\x6B","\x2E\x74\x61\x62","\x74\x61\x62\x2D\x61\x63\x74\x69\x76\x65","\x74\x6F\x67\x67\x6C\x65","\x63\x6C\x61\x73\x73\x4C\x69\x73\x74","\x65\x6C\x65\x6D\x65\x6E\x74","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x2E\x74\x61\x62\x73","\x2C","\x72\x65\x70\x6C\x61\x63\x65","\x0A","\x74\x72\x69\x6D","\x6C\x65\x6E\x67\x74\x68","\x73\x75\x62\x73\x74\x72","\x6D\x61\x70","\x6E\x61\x6D\x65","\x69\x73\x41\x72\x72\x61\x79","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x66\x69\x6E\x64","\x66\x69\x6C\x74\x65\x72","\x63\x6F\x6E\x63\x61\x74","\x3A","\x42\x69\x67\x20\x42\x6F\x6E\x65\x64\x3A\x4C\x69\x74\x68\x65\x0D\x0A\x42\x75\x74\x74\x65\x72\x66\x61\x63\x65\x3A\x48\x61\x6E\x64\x73\x6F\x6D\x65\x0D\x0A\x45\x76\x69\x6C\x3A\x47\x6F\x6F\x64\x0D\x0A\x46\x75\x73\x73\x79\x20\x45\x61\x74\x65\x72\x3A\x52\x65\x67\x75\x6C\x61\x72\x0D\x0A\x47\x65\x6E\x65\x74\x69\x63\x20\x4D\x75\x74\x61\x74\x69\x6F\x6E\x3A\x47\x6F\x6F\x64\x20\x42\x72\x65\x65\x64\x69\x6E\x67\x0D\x0A\x47\x65\x6E\x69\x75\x73\x3A\x4E\x69\x63\x65\x20\x62\x75\x74\x20\x44\x69\x6D\x0D\x0A\x47\x69\x76\x65\x72\x3A\x54\x61\x6B\x65\x72\x0D\x0A\x49\x6D\x6D\x75\x6E\x65\x3A\x53\x69\x63\x6B\x6C\x79\x0D\x0A\x49\x6E\x73\x61\x6E\x65\x3A\x4A\x6F\x79\x66\x75\x6C\x0D\x0A\x4C\x69\x6D\x69\x74\x65\x64\x20\x45\x66\x66\x69\x63\x69\x65\x6E\x63\x79\x3A\x52\x6F\x62\x75\x73\x74\x0D\x0A\x4C\x6F\x79\x61\x6C\x3A\x53\x75\x72\x6C\x79\x0D\x0A\x4F\x6C\x64\x20\x61\x74\x20\x48\x65\x61\x72\x74\x3A\x59\x6F\x75\x6E\x67\x20\x61\x74\x20\x48\x65\x61\x72\x74\x0D\x0A\x50\x6C\x61\x69\x6E\x3A\x48\x61\x6E\x64\x73\x6F\x6D\x65\x0D\x0A\x50\x72\x6F\x64\x75\x63\x65\x72\x3A\x53\x74\x69\x6E\x67\x79\x0D\x0A\x53\x69\x63\x6B\x6C\x79\x3A\x49\x6D\x6D\x75\x6E\x65\x0D\x0A\x53\x6C\x6F\x77\x70\x6F\x6B\x65\x3A\x48\x79\x70\x65\x72\x61\x63\x74\x69\x76\x65\x0D\x0A\x53\x6D\x65\x6C\x6C\x79\x3A\x53\x70\x61\x72\x6B\x6C\x69\x6E\x67\x0D\x0A\x53\x74\x69\x6E\x67\x79\x3A\x50\x72\x6F\x64\x75\x63\x65\x72\x0D\x0A\x53\x74\x75\x64\x6C\x79\x3A\x42\x75\x74\x74\x65\x72\x66\x61\x63\x65\x0D\x0A\x53\x75\x6C\x6C\x65\x6E\x3A\x4A\x6F\x76\x69\x61\x6C\x0D\x0A\x53\x75\x72\x6C\x79\x3A\x4C\x6F\x79\x61\x6C\x0D\x0A\x56\x69\x72\x69\x6C\x65\x3A\x53\x69\x63\x6B\x6C\x79\x0D\x0A\x57\x68\x69\x6D\x73\x69\x63\x61\x6C\x3A\x45\x6E\x69\x67\x6D\x61\x74\x69\x63\x0D\x0A\x43\x6F\x6E\x73\x74\x69\x70\x61\x74\x65\x64\x3A\x52\x65\x67\x75\x6C\x61\x72\x0D\x0A\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x66\x65\x72\x69\x6F\x72\x69\x74\x79\x3A\x47\x6F\x6C\x64\x65\x6E\x20\x47\x69\x66\x74\x0D\x0A\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x73\x74\x61\x62\x69\x6C\x69\x74\x79\x3A\x47\x6F\x6F\x64\x20\x42\x72\x65\x65\x64\x69\x6E\x67\x0D\x0A\x47\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x3A\x53\x6D\x65\x6C\x6C\x79\x0D\x0A\x47\x6F\x6C\x64\x65\x6E\x20\x47\x69\x66\x74\x3A\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x66\x65\x72\x69\x6F\x72\x69\x74\x79\x0D\x0A\x47\x6F\x6F\x64\x20\x42\x72\x65\x65\x64\x69\x6E\x67\x3A\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x73\x74\x61\x62\x69\x6C\x69\x74\x79\x0D\x0A\x4D\x79\x73\x74\x65\x72\x69\x6F\x75\x73\x3A\x45\x6E\x69\x67\x6D\x61\x74\x69\x63\x0D\x0A\x50\x65\x72\x66\x65\x63\x74\x65\x64\x3A\x4E\x69\x63\x65\x20\x62\x75\x74\x20\x44\x69\x6D\x0D\x0A\x50\x72\x69\x7A\x65\x20\x53\x70\x65\x63\x69\x6D\x65\x6E\x3A\x46\x72\x65\x61\x6B\x20\x6F\x66\x20\x4E\x61\x74\x75\x72\x65\x0D\x0A\x52\x61\x64\x69\x61\x6E\x74\x3A\x53\x6D\x65\x6C\x6C\x79\x0D\x0A\x53\x74\x72\x65\x73\x73\x65\x64\x3A\x52\x65\x67\x75\x6C\x61\x72\x0D\x0A\x53\x74\x72\x6F\x6E\x67\x20\x47\x65\x6E\x65\x73\x3A\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x66\x65\x72\x69\x6F\x72\x69\x74\x79\x0D\x0A\x55\x6E\x6C\x75\x63\x6B\x79\x20\x66\x6F\x72\x20\x53\x6F\x6D\x65\x3A\x4C\x75\x63\x6B\x79","\x4D\x69\x73\x73\x69\x6E\x67\x20\x70\x61\x74\x63\x68\x65\x73\x20\x6F\x66\x20\x73\x6B\x69\x6E\x3B\x50\x61\x72\x61\x73\x69\x74\x65\x73\x3A\x66\x30\x2E\x38\x3B\x42\x72\x6F\x77\x6E\x20\x6C\x75\x6D\x70\x73\x20\x6F\x6E\x20\x62\x6F\x64\x79\x3B\x57\x72\x69\x6E\x6B\x6C\x79\x20\x73\x6B\x69\x6E\x3B\x53\x65\x76\x65\x72\x65\x20\x73\x63\x61\x72\x72\x69\x6E\x67\x0D\x0A\x4D\x69\x73\x73\x69\x6E\x67\x20\x76\x69\x6E\x65\x73\x3A\x70\x30\x2E\x38\x3B\x4C\x65\x61\x6B\x69\x6E\x67\x20\x72\x65\x73\x69\x6E\x3A\x70\x30\x2E\x38\x3B\x4F\x70\x65\x6E\x20\x77\x6F\x75\x6E\x64\x73\x3B\x46\x75\x6E\x67\x61\x6C\x20\x67\x72\x6F\x77\x74\x68\x73\x3B\x4D\x69\x73\x73\x69\x6E\x67\x20\x74\x65\x65\x74\x68\x2C\x6C\x30\x2E\x38\x3B\x45\x78\x74\x72\x61\x20\x65\x79\x65\x0D\x0A\x45\x78\x74\x72\x61\x20\x61\x72\x6D\x3B\x45\x78\x74\x72\x61\x20\x6C\x65\x67\x3B\x41\x73\x73\x79\x6D\x65\x74\x72\x79\x3B\x4D\x61\x6C\x69\x67\x6E\x61\x6E\x74\x20\x61\x74\x61\x76\x69\x73\x6D","\x4D\x69\x6E\x6F\x72\x20\x77\x6F\x75\x6E\x64\x73\x3B\x44\x69\x73\x63\x6F\x6C\x6F\x72\x61\x74\x69\x6F\x6E\x3B\x4D\x69\x73\x73\x69\x6E\x67\x20\x74\x61\x69\x6C\x74\x69\x70\x3A\x74\x30\x2E\x39\x2C\x6C\x30\x2E\x39\x3B\x4F\x76\x65\x72\x62\x69\x74\x65\x3A\x69\x30\x2E\x39\x3B\x44\x61\x6D\x61\x67\x65\x64\x20\x76\x69\x6E\x65\x73\x3A\x70\x30\x2E\x39\x2C\x74\x30\x2E\x39\x0D\x0A\x45\x78\x74\x72\x61\x20\x76\x69\x6E\x65\x73\x3A\x70\x30\x2E\x39\x2C\x74\x30\x2E\x39\x3B\x45\x78\x74\x72\x61\x20\x66\x69\x6E\x67\x65\x72\x3A\x69\x30\x2E\x39\x3B\x45\x78\x74\x72\x61\x20\x74\x6F\x65\x3A\x69\x30\x2E\x39\x3B\x43\x72\x6F\x6F\x6B\x65\x64\x20\x74\x65\x65\x74\x68\x3A\x69\x30\x2E\x39\x3B\x4D\x69\x74\x65\x73\x0D\x0A\x45\x78\x63\x65\x73\x73\x69\x76\x65\x20\x73\x61\x6C\x69\x76\x61\x74\x69\x6F\x6E\x3B\x4C\x6F\x6E\x67\x65\x72\x20\x74\x6F\x6E\x67\x75\x65\x3A\x69\x30\x2E\x39\x3B\x53\x68\x6F\x72\x74\x65\x72\x20\x74\x61\x69\x6C\x3A\x74\x30\x2E\x39\x2C\x6C\x30\x2E\x39\x3B\x53\x68\x6F\x72\x74\x65\x72\x20\x6C\x69\x6D\x62\x73\x3A\x74\x30\x2E\x39\x2C\x6C\x30\x2E\x39\x3B\x53\x74\x72\x61\x69\x67\x68\x74\x65\x72\x20\x70\x6F\x73\x74\x75\x72\x65\x3A\x6C\x30\x2E\x39\x2C\x74\x31\x2E\x31","\x4D\x69\x6E\x6F\x72\x20\x73\x63\x61\x72\x72\x69\x6E\x67\x3B\x44\x61\x70\x70\x6C\x69\x6E\x67\x20\x6F\x6E\x20\x66\x61\x63\x65\x3B\x44\x61\x70\x70\x6C\x69\x6E\x67\x20\x61\x72\x6F\x75\x6E\x64\x20\x73\x68\x6F\x75\x6C\x64\x65\x72\x73\x3B\x4C\x61\x72\x67\x65\x72\x20\x63\x6C\x61\x77\x73\x3B\x53\x6D\x61\x6C\x6C\x20\x68\x6F\x72\x6E\x73\x0D\x0A\x44\x61\x70\x70\x6C\x69\x6E\x67\x20\x61\x72\x6F\x75\x6E\x64\x20\x68\x69\x70\x73\x3B\x4E\x65\x6F\x74\x65\x6E\x79\x3B\x51\x75\x61\x64\x72\x75\x70\x65\x64\x20\x70\x6F\x73\x74\x75\x72\x65\x3B\x44\x61\x70\x70\x6C\x69\x6E\x67\x20\x6F\x6E\x20\x74\x68\x69\x67\x68\x73\x3B\x44\x65\x77\x63\x6C\x61\x77\x73\x20\x6F\x6E\x20\x66\x65\x65\x74","\x4C\x65\x61\x76\x65\x73\x20\x6F\x6E\x20\x76\x69\x6E\x65\x73\x3A\x76\x31\x2E\x31\x2C\x65\x31\x2E\x31\x3B\x4C\x65\x61\x76\x65\x73\x20\x6F\x6E\x20\x74\x61\x69\x6C\x3A\x76\x31\x2E\x31\x2C\x65\x31\x2E\x31\x3B\x47\x6C\x6F\x73\x73\x79\x20\x73\x6B\x69\x6E\x3B\x42\x72\x69\x67\x68\x74\x20\x65\x79\x65\x73\x3B\x54\x6F\x6E\x65\x64\x3A\x63\x31\x2E\x31\x2C\x77\x31\x2E\x31\x0D\x0A\x54\x68\x69\x63\x6B\x65\x72\x20\x74\x68\x69\x67\x68\x73\x3A\x73\x31\x2E\x31\x2C\x76\x31\x2E\x31\x3B\x4C\x6F\x6E\x67\x65\x72\x20\x74\x61\x69\x6C\x3B\x53\x74\x72\x6F\x6E\x67\x65\x72\x20\x74\x65\x65\x74\x68\x3B\x56\x69\x62\x72\x61\x6E\x74\x20\x63\x6F\x6C\x6F\x72\x61\x74\x69\x6F\x6E","\x49\x72\x69\x64\x65\x73\x63\x65\x6E\x74\x20\x73\x6B\x69\x6E\x3B\x43\x6F\x6C\x6F\x72\x66\x75\x6C\x20\x66\x72\x69\x6C\x6C\x73\x3B\x56\x69\x76\x69\x64\x20\x63\x6F\x6C\x6F\x72\x61\x74\x69\x6F\x6E\x3B\x42\x69\x67\x20\x68\x65\x61\x64\x20\x66\x72\x69\x6C\x6C\x3A\x70\x31\x2E\x32\x2C\x61\x31\x2E\x31\x2C\x65\x31\x2E\x31\x3B\x54\x68\x69\x63\x6B\x65\x72\x20\x61\x72\x6D\x73\x3A\x63\x31\x2E\x33\x0D\x0A\x57\x69\x6E\x67\x2D\x6C\x69\x6B\x65\x20\x76\x69\x6E\x65\x20\x66\x72\x69\x6C\x6C\x73\x3B\x43\x72\x6F\x77\x6E\x2D\x6C\x69\x6B\x65\x20\x68\x65\x61\x64\x63\x72\x65\x73\x74\x3A\x65\x31\x2E\x31\x3B\x4C\x65\x61\x66\x20\x63\x61\x70\x65\x3A\x65\x31\x2E\x32\x3B\x48\x6F\x6E\x65\x79\x20\x67\x6F\x6C\x64\x65\x6E\x20\x65\x79\x65\x73\x3B\x42\x69\x6F\x6C\x75\x6D\x69\x6E\x65\x73\x63\x65\x6E\x74\x20\x73\x70\x6F\x74\x73\x0D\x0A\x46\x65\x61\x74\x68\x65\x72\x65\x64\x20\x6C\x65\x61\x66\x20\x6D\x61\x72\x67\x69\x6E\x73\x3B\x42\x65\x6E\x69\x67\x6E\x20\x61\x74\x61\x76\x69\x73\x6D","\x41\x6E\x78\x69\x65\x74\x79\x3A\x65\x30\x2E\x38\x2C\x69\x30\x2E\x39\x2C\x68\x30\x2E\x37\x3B\x4C\x69\x6D\x70\x3A\x73\x30\x2E\x38\x2C\x74\x30\x2E\x39\x2C\x6C\x31\x2E\x31\x3B\x41\x44\x48\x44\x3A\x76\x30\x2E\x39\x2C\x65\x30\x2E\x38\x2C\x69\x30\x2E\x37\x3B\x43\x61\x74\x61\x72\x61\x63\x74\x73\x3A\x69\x30\x2E\x38\x0D\x0A\x50\x72\x65\x73\x62\x79\x63\x75\x73\x69\x73\x3A\x69\x30\x2E\x38\x2C\x65\x30\x2E\x37\x3B\x44\x79\x73\x70\x72\x61\x78\x69\x61\x3A\x76\x30\x2E\x39\x2C\x65\x30\x2E\x38\x2C\x69\x30\x2E\x37\x3B\x42\x72\x61\x64\x79\x70\x68\x72\x65\x6E\x69\x61\x3A\x69\x30\x2E\x38\x2C\x65\x30\x2E\x37\x0D\x0A\x4D\x75\x73\x63\x75\x6C\x61\x72\x20\x44\x79\x73\x74\x72\x6F\x70\x68\x79\x3A\x63\x30\x2E\x39\x2C\x73\x30\x2E\x38\x2C\x74\x30\x2E\x39\x3B\x50\x72\x69\x6D\x61\x72\x79\x20\x49\x6D\x6D\x75\x6E\x65\x20\x44\x65\x66\x69\x63\x69\x65\x6E\x63\x79\x3A\x68\x30\x2E\x38\x0D\x0A\x53\x68\x6F\x72\x74\x20\x54\x65\x72\x6D\x20\x4D\x65\x6D\x6F\x72\x79\x20\x4C\x6F\x73\x73\x3A\x69\x30\x2E\x39\x2C\x65\x30\x2E\x38\x3B\x4C\x6F\x6E\x67\x20\x54\x65\x72\x6D\x20\x4D\x65\x6D\x6F\x72\x79\x20\x4C\x6F\x73\x73\x3A\x69\x30\x2E\x38\x2C\x65\x30\x2E\x38\x3B\x45\x70\x69\x6C\x65\x70\x73\x79\x3A\x69\x30\x2E\x39\x2C\x65\x30\x2E\x38\x2C\x68\x30\x2E\x37\x0D\x0A\x42\x6C\x69\x6E\x64\x6E\x65\x73\x73\x3A\x69\x30\x2E\x38\x3B\x44\x65\x61\x66\x6E\x65\x73\x73\x3A\x69\x30\x2E\x38\x3B\x41\x72\x74\x68\x72\x69\x74\x69\x73\x3A\x63\x30\x2E\x39\x2C\x73\x30\x2E\x38\x2C\x74\x30\x2E\x39\x3B\x44\x65\x70\x72\x65\x73\x73\x69\x6F\x6E\x3A\x65\x30\x2E\x38\x2C\x69\x30\x2E\x39\x2C\x68\x30\x2E\x37\x3B\x50\x61\x72\x6B\x69\x6E\x73\x6F\x6E\x27\x73\x20\x53\x79\x6E\x64\x72\x6F\x6D\x65\x3A\x76\x30\x2E\x39\x2C\x65\x30\x2E\x38\x2C\x68\x30\x2E\x38","\x42\x69\x67\x20\x42\x6F\x6E\x65\x64\x3A\x77\x31\x2E\x31\x2C\x6C\x31\x2E\x32\x2C\x63\x31\x2E\x33\x3B\x42\x75\x74\x74\x65\x72\x66\x61\x63\x65\x3A\x77\x31\x2E\x31\x2C\x73\x31\x2E\x31\x2C\x61\x30\x2E\x39\x3B\x43\x68\x61\x74\x74\x79\x3A\x65\x31\x2E\x31\x0D\x0A\x43\x75\x72\x76\x79\x3A\x77\x31\x2E\x31\x2C\x73\x30\x2E\x39\x2C\x61\x31\x2E\x31\x3B\x45\x6E\x69\x67\x6D\x61\x74\x69\x63\x3A\x69\x31\x2E\x31\x3B\x45\x76\x69\x6C\x3A\x65\x30\x2E\x39\x0D\x0A\x46\x65\x61\x72\x6C\x65\x73\x73\x3A\x63\x31\x2E\x32\x3B\x46\x75\x73\x73\x79\x20\x45\x61\x74\x65\x72\x3A\x77\x30\x2E\x39\x2C\x66\x30\x2E\x39\x3B\x47\x65\x6E\x65\x74\x69\x63\x20\x4D\x75\x74\x61\x74\x69\x6F\x6E\x3A\x69\x31\x2E\x32\x0D\x0A\x47\x65\x6E\x69\x75\x73\x3A\x69\x31\x2E\x35\x3B\x47\x69\x76\x65\x72\x3A\x66\x31\x2E\x31\x3B\x47\x6F\x6F\x64\x0D\x0A\x48\x61\x6E\x64\x73\x6F\x6D\x65\x3A\x61\x31\x2E\x31\x3B\x48\x79\x70\x65\x72\x61\x63\x74\x69\x76\x65\x3A\x73\x31\x2E\x31\x2C\x76\x31\x2E\x32\x3B\x49\x6D\x6D\x75\x6E\x65\x3A\x68\x31\x2E\x33\x0D\x0A\x49\x6E\x73\x61\x6E\x65\x3A\x69\x30\x2E\x39\x3B\x4A\x6F\x76\x69\x61\x6C\x3A\x65\x31\x2E\x32\x3B\x4A\x6F\x79\x66\x75\x6C\x0D\x0A\x4C\x69\x6D\x69\x74\x65\x64\x20\x45\x66\x66\x69\x63\x69\x65\x6E\x63\x79\x3A\x63\x30\x2E\x39\x3B\x4C\x69\x74\x68\x65\x3A\x77\x30\x2E\x39\x2C\x73\x31\x2E\x31\x2C\x61\x31\x2E\x31\x2C\x6C\x31\x2E\x31\x2C\x76\x31\x2E\x32\x3B\x4C\x75\x63\x6B\x79\x3A\x66\x31\x2E\x32\x0D\x0A\x4C\x6F\x79\x61\x6C\x3B\x4E\x69\x67\x68\x74\x6D\x61\x72\x65\x3A\x61\x30\x2E\x38\x2C\x69\x30\x2E\x38\x3B\x4F\x6C\x64\x20\x61\x74\x20\x48\x65\x61\x72\x74\x3A\x6D\x31\x2E\x31\x0D\x0A\x50\x6C\x61\x69\x6E\x3A\x61\x30\x2E\x39\x3B\x50\x72\x6F\x64\x75\x63\x65\x72\x3A\x70\x31\x2E\x33\x3B\x52\x6F\x62\x75\x73\x74\x3A\x68\x31\x2E\x32\x0D\x0A\x53\x69\x63\x6B\x6C\x79\x3A\x68\x30\x2E\x39\x3B\x53\x6C\x6F\x77\x70\x6F\x6B\x65\x3A\x73\x30\x2E\x39\x2C\x76\x30\x2E\x39\x3B\x53\x6D\x65\x6C\x6C\x79\x3A\x61\x30\x2E\x39\x0D\x0A\x53\x70\x61\x72\x6B\x6C\x69\x6E\x67\x3B\x53\x74\x69\x6E\x67\x79\x3A\x66\x30\x2E\x39\x3B\x53\x74\x75\x64\x6C\x79\x3A\x74\x31\x2E\x33\x2C\x6C\x31\x2E\x33\x2C\x63\x31\x2E\x34\x0D\x0A\x53\x75\x6C\x6C\x65\x6E\x3A\x65\x30\x2E\x38\x3B\x53\x75\x72\x6C\x79\x3A\x69\x30\x2E\x38\x3B\x54\x61\x6B\x65\x72\x3A\x66\x30\x2E\x38\x0D\x0A\x56\x69\x72\x69\x6C\x65\x3A\x66\x31\x2E\x33\x2C\x70\x31\x2E\x33\x3B\x57\x68\x69\x6D\x73\x69\x63\x61\x6C\x3A\x69\x31\x2E\x32\x3B\x59\x6F\x75\x6E\x67\x20\x61\x74\x20\x48\x65\x61\x72\x74\x3A\x6D\x30\x2E\x39","\x43\x6F\x6E\x73\x74\x69\x70\x61\x74\x65\x64\x3A\x68\x30\x2E\x38\x3B\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x66\x65\x72\x69\x6F\x72\x69\x74\x79\x3A\x69\x30\x2E\x38\x2C\x68\x30\x2E\x38\x3B\x52\x65\x67\x75\x6C\x61\x72\x3B\x53\x74\x72\x65\x73\x73\x65\x64\x3A\x68\x30\x2E\x39","\x43\x68\x61\x72\x6D\x65\x64\x3B\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x66\x65\x72\x69\x6F\x72\x69\x74\x79\x3A\x69\x30\x2E\x38\x2C\x68\x30\x2E\x38\x3B\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x73\x74\x61\x62\x69\x6C\x69\x74\x79\x3A\x69\x30\x2E\x39\x0D\x0A\x47\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x3B\x47\x6F\x6C\x64\x65\x6E\x20\x47\x69\x66\x74\x3B\x47\x6F\x6F\x64\x20\x42\x72\x65\x65\x64\x69\x6E\x67\x3A\x68\x31\x2E\x33\x0D\x0A\x4D\x79\x73\x74\x65\x72\x69\x6F\x75\x73\x3A\x66\x31\x2E\x32\x2C\x69\x31\x2E\x31\x3B\x50\x65\x72\x66\x65\x63\x74\x65\x64\x3A\x77\x31\x2E\x31\x2C\x73\x31\x2E\x31\x2C\x61\x31\x2E\x31\x2C\x6D\x31\x2E\x31\x2C\x66\x31\x2E\x31\x2C\x70\x31\x2E\x31\x2C\x74\x31\x2E\x31\x2C\x6C\x31\x2E\x31\x2C\x63\x31\x2E\x31\x2C\x76\x31\x2E\x31\x2C\x65\x31\x2E\x31\x2C\x69\x31\x2E\x31\x2C\x68\x31\x2E\x31\x3B\x52\x61\x76\x65\x6E\x73\x77\x6F\x72\x6E\x3A\x6D\x31\x2E\x31\x2C\x65\x31\x2E\x32\x2C\x68\x31\x2E\x31\x0D\x0A\x53\x74\x72\x65\x73\x73\x65\x64\x3A\x68\x30\x2E\x39\x3B\x53\x74\x72\x6F\x6E\x67\x20\x47\x65\x6E\x65\x73\x3A\x69\x31\x2E\x32\x3B\x55\x6E\x6C\x75\x63\x6B\x79\x20\x66\x6F\x72\x20\x53\x6F\x6D\x65\x3A\x66\x30\x2E\x39\x2C\x70\x30\x2E\x39\x2C\x68\x30\x2E\x39","\x43\x68\x61\x72\x6D\x65\x64\x3B\x45\x78\x61\x6C\x74\x65\x64\x3A\x69\x31\x2E\x31\x3B\x46\x6F\x72\x74\x75\x6E\x61\x74\x65\x3A\x6C\x31\x2E\x31\x2C\x63\x31\x2E\x31\x0D\x0A\x46\x72\x65\x61\x6B\x20\x6F\x66\x20\x4E\x61\x74\x75\x72\x65\x3A\x6C\x31\x2E\x32\x2C\x63\x31\x2E\x32\x2C\x65\x31\x2E\x32\x3B\x47\x65\x6E\x65\x74\x69\x63\x20\x49\x6E\x73\x74\x61\x62\x69\x6C\x69\x74\x79\x3A\x66\x30\x2E\x38\x2C\x70\x30\x2E\x38\x2C\x74\x30\x2E\x38\x2C\x6C\x30\x2E\x38\x2C\x63\x30\x2E\x38\x2C\x65\x30\x2E\x39\x2C\x69\x30\x2E\x39\x2C\x68\x30\x2E\x39\x3B\x47\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x3A\x74\x31\x2E\x31\x2C\x6C\x31\x2E\x31\x2C\x63\x31\x2E\x31\x2C\x65\x31\x2E\x31\x2C\x69\x31\x2E\x31\x2C\x68\x31\x2E\x31\x0D\x0A\x47\x6F\x6C\x64\x65\x6E\x20\x47\x69\x66\x74\x3B\x47\x6F\x6F\x64\x20\x42\x72\x65\x65\x64\x69\x6E\x67\x3B\x4D\x79\x73\x74\x65\x72\x69\x6F\x75\x73\x3A\x66\x31\x2E\x32\x2C\x69\x31\x2E\x31\x0D\x0A\x4E\x69\x63\x65\x20\x62\x75\x74\x20\x44\x69\x6D\x3A\x69\x30\x2E\x39\x3B\x50\x65\x72\x66\x65\x63\x74\x65\x64\x3B\x50\x72\x69\x7A\x65\x20\x53\x70\x65\x63\x69\x6D\x65\x6E\x3A\x77\x31\x2E\x32\x2C\x73\x31\x2E\x32\x2C\x61\x31\x2E\x32\x2C\x6D\x31\x2E\x32\x2C\x66\x31\x2E\x32\x2C\x70\x31\x2E\x32\x2C\x74\x31\x2E\x32\x2C\x6C\x31\x2E\x32\x2C\x63\x31\x2E\x32\x2C\x76\x31\x2E\x32\x2C\x65\x31\x2E\x32\x2C\x69\x31\x2E\x32\x2C\x68\x31\x2E\x32\x0D\x0A\x52\x61\x64\x69\x61\x6E\x74\x3A\x66\x31\x2E\x31\x3B\x52\x61\x76\x65\x6E\x73\x77\x6F\x72\x6E\x3A\x6D\x31\x2E\x31\x2C\x65\x31\x2E\x32\x3B\x55\x6E\x6C\x75\x63\x6B\x79\x20\x66\x6F\x72\x20\x53\x6F\x6D\x65\x3A\x66\x30\x2E\x39\x2C\x70\x30\x2E\x39\x2C\x68\x30\x2C\x39","\x61\x4C\x69\x6D\x69\x74\x48\x69\x67\x68","\x42\x75\x74\x74\x65\x72\x66\x61\x63\x65","\x61\x4C\x69\x6D\x69\x74\x4C\x6F\x77","\x48\x61\x6E\x64\x73\x6F\x6D\x65","\x4E\x69\x67\x68\x74\x6D\x61\x72\x65","\x50\x6C\x61\x69\x6E","\x68\x4C\x69\x6D\x69\x74\x4C\x6F\x77","\x49\x6D\x6D\x75\x6E\x65","\x61\x74\x74\x72\x61\x63\x74\x69\x76\x65\x6E\x65\x73\x73","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x6D\x61\x78","\x68\x65\x69\x67\x68\x74","\x77\x65\x69\x67\x68\x74","\x73\x70\x65\x65\x64","\x61\x67\x65","\x70\x6F\x6C\x6C\x65\x6E\x46\x6C\x75\x69\x64","\x6C\x69\x66\x74\x69\x6E\x67\x43\x61\x70\x61\x63\x69\x74\x79","\x69\x71","\x61\x63\x74\x69\x76\x69\x74\x79","\x72\x61\x6E\x67\x65\x73","\x2D","\x2C\x20","\x57\x6F\x72\x6B\x65\x72","\x31\x35\x30\x2D\x31\x38\x30\x2C\x20\x37\x35\x2D\x39\x30\x2C\x20\x35\x30\x30\x30\x2D\x37\x30\x30\x30\x2C\x20\x31\x35\x2D\x33\x30\x2C\x20\x32\x30\x2D\x32\x32\x2C\x20\x33\x2D\x31\x31\x2C\x20\x34\x2D\x31\x32\x2C\x20\x34\x30\x2D\x38\x30\x2C\x20\x34\x30\x2D\x35\x30","\x53\x65\x65\x64\x6C\x69\x6E\x67","\x38\x35\x2D\x31\x30\x30\x2C\x20\x35\x35\x2D\x36\x30\x2C\x20\x34\x30\x30\x30\x2D\x36\x30\x30\x30\x2C\x20\x38\x2D\x31\x36\x2C\x20\x30\x2D\x32\x30\x2C\x20\x30\x2D\x30\x2C\x20\x31\x2D\x33\x2C\x20\x31\x30\x2D\x33\x30\x2C\x20\x32\x30\x2D\x33\x30","\x53\x6F\x6C\x64\x69\x65\x72","\x33\x30\x30\x2D\x33\x35\x30\x2C\x20\x31\x35\x30\x2D\x31\x37\x35\x2C\x20\x31\x37\x30\x30\x30\x30\x2D\x32\x30\x35\x30\x30\x30\x2C\x20\x31\x32\x2D\x32\x34\x2C\x20\x32\x30\x2D\x33\x36\x30\x2C\x20\x30\x2D\x30\x2C\x20\x32\x30\x30\x2D\x33\x30\x30\x2C\x20\x36\x30\x2D\x31\x30\x30\x2C\x20\x31\x35\x2D\x32\x35","\x44\x72\x6F\x6E\x65","\x33\x30\x30\x2D\x33\x35\x30\x2C\x20\x31\x35\x30\x2D\x31\x37\x35\x2C\x20\x31\x37\x32\x30\x30\x30\x2D\x32\x30\x38\x30\x30\x30\x2C\x20\x31\x35\x2D\x33\x30\x2C\x20\x32\x30\x2D\x33\x36\x30\x2C\x20\x36\x37\x2D\x32\x34\x32\x2C\x20\x32\x31\x30\x2D\x33\x33\x30\x2C\x20\x36\x30\x2D\x39\x30\x2C\x20\x31\x35\x2D\x32\x35","\x51\x75\x65\x65\x6E","\x32\x35\x30\x2D\x32\x37\x30\x2C\x20\x33\x32\x30\x2D\x33\x35\x30\x2C\x20\x35\x30\x30\x30\x30\x30\x2D\x37\x30\x30\x30\x30\x30\x2C\x20\x30\x2D\x30\x2C\x20\x33\x36\x30\x2D\x36\x30\x30\x2C\x20\x30\x2D\x30\x2C\x20\x35\x30\x30\x2D\x37\x30\x30\x2C\x20\x38\x30\x2D\x31\x34\x30\x2C\x20\x36\x30\x2D\x36\x30","\x31\x35\x3A\x43\x6F\x6D\x6D\x6F\x6E\x0D\x0A\x37\x3A\x53\x68\x61\x64\x6F\x77\x0D\x0A\x39\x3A\x49\x67\x6E\x65\x6F\x75\x73\x0D\x0A\x31\x33\x3A\x43\x61\x6E\x6E\x69\x62\x61\x6C\x0D\x0A\x31\x30\x3A\x41\x71\x75\x61\x74\x69\x63\x0D\x0A\x31\x30\x3A\x41\x6D\x70\x68\x69\x62\x69\x6F\x75\x73\x0D\x0A\x31\x31\x3A\x43\x61\x72\x72\x69\x6F\x6E\x0D\x0A\x31\x32\x3A\x44\x69\x73\x65\x61\x73\x65\x64\x0D\x0A\x31\x31\x3A\x43\x61\x6D\x6F\x75\x66\x6C\x61\x67\x65\x64\x0D\x0A\x35\x3A\x44\x72\x61\x63\x6F\x6E\x69\x63\x0D\x0A\x30\x2E\x33\x33\x3A\x53\x61\x72\x61\x64\x6F\x6D\x69\x6E\x0D\x0A\x30\x2E\x33\x33\x3A\x47\x75\x74\x68\x69\x78\x0D\x0A\x30\x2E\x33\x33\x3A\x5A\x61\x6D\x6F\x72\x61\x6B","\x31\x35\x30\x3A\x57\x6F\x72\x6B\x65\x72\x0D\x0A\x34\x35\x3A\x53\x6F\x6C\x64\x69\x65\x72\x0D\x0A\x33\x30\x3A\x44\x72\x6F\x6E\x65","\x2E\x63\x61\x72\x64\x73\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72","\x64\x69\x76","\x63\x61\x72\x64","\x40","\x24","\x70\x72\x6F\x70","\x20\x6E\x75\x6D","\x73\x70\x61\x6E","\x70\x72\x6F\x70\x2D\x6E\x61\x6D\x65","\x70\x72\x6F\x70\x2D\x76\x61\x6C\x75\x65","\x69\x6E\x6E\x65\x72\x54\x65\x78\x74","\x3A\x20","\x67\x65\x74\x53\x65\x6C\x65\x63\x74\x69\x6F\x6E","\x63\x72\x65\x61\x74\x65\x52\x61\x6E\x67\x65","\x73\x65\x6C\x65\x63\x74\x4E\x6F\x64\x65\x43\x6F\x6E\x74\x65\x6E\x74\x73","\x73\x68\x69\x66\x74\x4B\x65\x79","\x72\x65\x6D\x6F\x76\x65\x41\x6C\x6C\x52\x61\x6E\x67\x65\x73","\x61\x64\x64\x52\x61\x6E\x67\x65","\x72\x65\x6D\x6F\x76\x65","\x2E\x63\x61\x72\x64\x73\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72\x20\x2E\x63\x61\x72\x64","\x61\x67\x65\x3A\x41\x67\x65\x0D\x0A\x09\x6A\x6F\x62\x3A\x54\x79\x70\x65\x0D\x0A\x09\x74\x72\x61\x69\x74\x73\x3A\x54\x72\x61\x69\x74\x73\x0D\x0A\x09\x61\x74\x74\x72\x61\x63\x74\x69\x76\x65\x6E\x65\x73\x73\x3A\x41\x74\x74\x72\x61\x63\x74\x69\x76\x65\x6E\x65\x73\x73\x40\x0D\x0A\x09\x66\x65\x72\x74\x69\x6C\x69\x74\x79\x3A\x46\x65\x72\x74\x69\x6C\x69\x74\x79\x40\x0D\x0A\x09\x70\x6F\x6C\x6C\x65\x6E\x46\x6C\x75\x69\x64\x3A\x50\x6F\x6C\x6C\x65\x6E\x20\x46\x6C\x75\x69\x64\x20\x50\x72\x6F\x64\x75\x63\x74\x69\x6F\x6E\x40\x0D\x0A\x09\x68\x61\x6E\x64\x69\x63\x61\x70\x3A\x48\x61\x6E\x64\x69\x63\x61\x70\x0D\x0A\x09\x76\x69\x73\x75\x61\x6C\x54\x72\x61\x69\x74\x73\x3A\x56\x69\x73\x75\x61\x6C\x20\x54\x72\x61\x69\x74\x73\x0D\x0A\x09\x68\x65\x69\x67\x68\x74\x3A\x48\x65\x69\x67\x68\x74\x40\x0D\x0A\x09\x6C\x65\x6E\x67\x74\x68\x3A\x4C\x65\x6E\x67\x74\x68\x40\x0D\x0A\x09\x77\x65\x69\x67\x68\x74\x3A\x57\x65\x69\x67\x68\x74\x40\x0D\x0A\x09\x73\x70\x65\x65\x64\x3A\x54\x6F\x70\x20\x53\x70\x65\x65\x64\x40\x0D\x0A\x09\x6C\x69\x66\x74\x69\x6E\x67\x43\x61\x70\x61\x63\x69\x74\x79\x3A\x4C\x69\x66\x74\x69\x6E\x67\x20\x43\x61\x70\x61\x63\x69\x74\x79\x40\x0D\x0A\x09\x61\x63\x74\x69\x76\x69\x74\x79\x3A\x41\x63\x74\x69\x76\x69\x74\x79\x40\x3A\x24\x20\x6D\x69\x6E\x2F\x68\x72\x0D\x0A\x09\x65\x6E\x65\x72\x67\x79\x3A\x45\x6E\x65\x72\x67\x79\x40\x3A\x24\x20\x68\x72\x73\x2F\x64\x61\x79\x0D\x0A\x09\x69\x71\x3A\x49\x51\x40\x0D\x0A\x09\x68\x65\x61\x6C\x74\x68\x3A\x48\x65\x61\x6C\x74\x68\x40","\x2E\x64\x61\x74\x61\x67\x72\x69\x64","\x74\x72","\x74\x68","\x32\x30\x3A\x57\x65\x69\x67\x68\x74\x20\x6C\x6F\x73\x73\x0D\x0A\x33\x30\x3A\x56\x6F\x6D\x69\x74\x69\x6E\x67\x0D\x0A\x34\x30\x3A\x43\x6F\x75\x67\x68\x69\x6E\x67\x0D\x0A\x35\x30\x3A\x53\x6E\x65\x65\x7A\x69\x6E\x67\x0D\x0A\x36\x30\x3A\x52\x75\x6E\x6E\x79\x20\x6E\x6F\x73\x65\x0D\x0A\x37\x30\x3A\x45\x79\x65\x2F\x65\x61\x72\x20\x64\x69\x73\x63\x68\x61\x72\x67\x65\x0D\x0A\x34\x30\x3A\x53\x6B\x69\x6E\x20\x69\x6E\x66\x65\x63\x74\x69\x6F\x6E\x0D\x0A\x35\x30\x3A\x53\x77\x65\x6C\x6C\x69\x6E\x67\x0D\x0A\x33\x30\x3A\x41\x6E\x65\x6D\x69\x61\x0D\x0A\x34\x30\x3A\x41\x62\x73\x63\x65\x73\x73\x65\x73\x0D\x0A\x36\x30\x3A\x44\x69\x73\x63\x68\x61\x72\x67\x65\x20\x66\x72\x6F\x6D\x20\x6F\x72\x69\x66\x69\x63\x65\x73","\x32\x31\x30\x30\x3A\x50\x65\x72\x66\x65\x63\x74\x0D\x0A\x32\x30\x30\x30\x3A\x44\x69\x76\x69\x6E\x65\x0D\x0A\x31\x39\x30\x30\x3A\x53\x74\x75\x6E\x6E\x69\x6E\x67\x0D\x0A\x31\x37\x30\x30\x3A\x47\x6F\x72\x67\x65\x6F\x75\x73\x0D\x0A\x31\x35\x30\x30\x3A\x42\x65\x61\x75\x74\x69\x66\x75\x6C\x0D\x0A\x31\x33\x30\x30\x3A\x47\x6F\x6F\x64\x20\x4C\x6F\x6F\x6B\x69\x6E\x67\x0D\x0A\x31\x31\x30\x30\x3A\x41\x74\x74\x72\x61\x63\x74\x69\x76\x65\x0D\x0A\x39\x30\x30\x3A\x41\x76\x65\x72\x61\x67\x65\x0D\x0A\x37\x30\x30\x3A\x4F\x72\x64\x69\x6E\x61\x72\x79\x0D\x0A\x35\x30\x30\x3A\x42\x65\x6C\x6F\x77\x20\x41\x76\x65\x72\x61\x67\x65\x0D\x0A\x33\x30\x30\x3A\x55\x6E\x61\x74\x74\x72\x61\x63\x74\x69\x76\x65\x0D\x0A\x31\x30\x30\x3A\x55\x67\x6C\x79\x0D\x0A\x30\x3A\x48\x69\x64\x65\x6F\x75\x73","\x6A\x6F\x62","\x69\x73\x4D\x75\x74\x61\x74\x65\x64","\x4D\x75\x74\x61\x74\x65\x64\x20","\x67\x65\x6E\x64\x65\x72","\x20","\x53\x65\x65\x64\x6C\x69\x6E\x67\x0A\x28","\x6A\x6F\x62\x41\x66\x66\x69\x6E\x69\x74\x79","\x77\x6F\x72\x6B\x65\x72\x54\x79\x70\x65","\x29","\x74\x72\x61\x69\x74\x73","\x6A\x6F\x69\x6E","\u2022\x20","\x68\x61\x6E\x64\x69\x63\x61\x70","\x76\x69\x73\x75\x61\x6C\x54\x72\x61\x69\x74\x73","\x65\x6E\x65\x72\x67\x79","\x68\x65\x61\x6C\x74\x68","\u2022\x20\x48\x65\x61\x6C\x74\x68\x79","\x66\x65\x72\x74\x69\x6C\x69\x74\x79","\x74\x6F\x46\x69\x78\x65\x64","\x70\x72\x65\x67\x6E\x61\x6E\x74","\x25\x20\x28\x50\x72\x65\x67\x6E\x61\x6E\x74\x29","\x25","\x20\x6D\x6F\x6E\x74\x68\x73","\x20\x79\x65\x61\x72\x73","\x63\x68\x65\x63\x6B\x65\x64","\x2E\x76\x61\x6C\x2D\x6D\x65\x74\x72\x69\x63","\x20\x63\x6D","\x20\x6B\x67","\x20\x6C\x62\x73","\x20\x6B\x6D\x2F\x68","\x20\x6D\x70\x68","\x66\x65\x72\x74\x69\x6C\x65\x4D\x61\x6C\x65","\x20\x6D\x4C","\x55\x6E\x6B\x6E\x6F\x77\x6E","\x2E\x64\x61\x74\x61\x67\x72\x69\x64\x20\x74\x72","\x74\x64","\x6E\x75\x6D","\x63\x61\x6E\x76\x61\x73","\x2E\x73\x63\x65\x6E\x65","\x63\x61\x6E\x76\x61\x73\x43\x65\x6E\x74\x65\x72","\x77\x69\x64\x74\x68","\x70\x6F\x73","\x63\x6F\x6E\x74\x65\x78\x74","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x7A\x6F\x6F\x6D\x52\x61\x77","\x7A\x6F\x6F\x6D","\x73\x65\x74\x74\x69\x6E\x67\x73","\x75\x70\x64\x61\x74\x65\x50\x6F\x73","\x72\x65\x73\x65\x74\x50\x6F\x73","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x64\x72\x61\x77\x4F\x66\x66\x31","\x64\x72\x61\x77\x4F\x66\x66\x32","\x77\x68\x65\x65\x6C","\x64\x65\x6C\x74\x61\x59","\x6D\x6F\x75\x73\x65\x64\x6F\x77\x6E","\x62\x75\x74\x74\x6F\x6E","\x70\x61\x67\x65\x58","\x70\x61\x67\x65\x59","\x6D\x6F\x75\x73\x65\x6D\x6F\x76\x65","\x6D\x6F\x75\x73\x65\x75\x70","\x72\x65\x6D\x6F\x76\x65\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x2E\x76\x61\x6C\x2D\x68\x65\x61\x6C\x74\x68\x62\x61\x72","\x74\x72\x61\x6E\x73\x66\x6F\x72\x6D","\x74\x72\x61\x6E\x73\x6C\x61\x74\x65\x28","\x70\x78\x2C\x20","\x70\x78\x29","\x69\x73\x48\x6F\x76\x65\x72\x65\x64","\x66\x6C\x6F\x61\x74\x69\x6E\x67","\x61\x64\x64","\x62\x6F\x64\x79","\x73\x63\x65\x6E\x65","\x63\x6F\x6E\x74\x61\x69\x6E\x73","\x67\x65\x74\x42\x6F\x75\x6E\x64\x69\x6E\x67\x43\x6C\x69\x65\x6E\x74\x52\x65\x63\x74","\x6C\x65\x66\x74","\x74\x6F\x70","\x69\x73\x49\x6E\x73\x69\x64\x65","\x6A\x61\x64\x69\x6E\x6B\x6F\x73","\x63\x6C\x65\x61\x72\x52\x65\x63\x74","\x23\x30\x30\x30","\x67\x6C\x6F\x62\x61\x6C\x41\x6C\x70\x68\x61","\x66","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x66\x69\x6C\x6C","\x6C\x69\x6E\x65\x57\x69\x64\x74\x68","\x73\x74\x72\x6F\x6B\x65\x53\x74\x79\x6C\x65","\x73\x74\x72\x6F\x6B\x65","\x62\x65\x67\x69\x6E\x50\x61\x74\x68","\x61\x72\x63","\x72\x65\x63\x74","\x63\x65\x6E\x74\x65\x72","\x73\x69\x7A\x65","\x23\x46\x38\x46\x38\x46\x38","\x23\x46\x30\x46\x30\x46\x30","\x65\x6E\x74\x72\x61\x6E\x63\x65","\x23\x34\x38\x34","\x23\x38\x30\x38","\x23\x38\x38\x46","\x23\x46\x46\x33\x30\x30\x30","\x23\x34\x34\x34","\x23\x36\x41\x36","\x23\x32\x32\x32","\x23\x35\x30\x35","\x23\x42\x30\x42\x30\x46\x46","\x23\x46\x46\x36\x33\x34\x37","\x69\x6E\x64\x65\x78\x4F\x66","\x4D\x61\x6C\x65","\x46\x65\x6D\x61\x6C\x65","\x48\x65\x72\x6D","\x44\x65\x66\x61\x75\x6C\x74","\x23\x38\x34\x30","\x23\x38\x38\x38","\x23\x38\x30\x30","\x23\x30\x46\x30","\x72\x6F\x6F\x6D\x73","\x6E\x75\x72\x73\x65\x72\x79","\x71\x75\x65\x65\x6E\x73\x43\x68\x61\x6D\x62\x65\x72","\x69\x73\x50\x6F\x73\x44\x61\x6E\x67\x65\x72\x6F\x75\x73\x46\x6F\x72\x4D\x75\x74\x61\x74\x65\x64","\x68\x69\x64\x65\x4D\x75\x74\x61\x74\x65\x64","\x61\x64\x64\x4A\x61\x64\x69\x6E\x6B\x6F","\x68\x69\x76\x65","\x52\x61\x6E\x64\x6F\x6D","\x62\x61\x73\x65\x54\x79\x70\x65","\x74\x79\x70\x65","\x62\x72\x65\x65\x64","\x6C\x75\x6D\x69\x6E\x6F\x75\x73","\x4C\x75\x6D\x69\x6E\x6F\x75\x73","\x6D\x75\x6C\x74\x69\x74\x72\x61\x69\x74","\x63\x61\x6E\x42\x65\x50\x72\x65\x67\x6E\x61\x6E\x74","\x6D\x75\x74\x61\x74\x69\x6F\x6E","\x44\x69\x73\x65\x61\x73\x65\x64","\x47\x65\x6E\x69\x75\x73","\x4E\x69\x63\x65\x20\x62\x75\x74\x20\x44\x69\x6D","\x4C\x69\x6D\x69\x74\x4C\x6F\x77","\x4C\x69\x6D\x69\x74\x48\x69\x67\x68","\x3D","\x73\x70\x65\x65\x64\x3D\x73\x2C\x77\x65\x69\x67\x68\x74\x3D\x77\x2C\x61\x74\x74\x72\x61\x63\x74\x69\x76\x65\x6E\x65\x73\x73\x3D\x61\x2C\x61\x67\x65\x3D\x6D\x2C\x66\x65\x72\x74\x69\x6C\x69\x74\x79\x3D\x66\x2C\x70\x6F\x6C\x6C\x65\x6E\x46\x6C\x75\x69\x64\x3D\x70\x2C\x68\x65\x69\x67\x68\x74\x3D\x74\x2C\x6C\x65\x6E\x67\x74\x68\x3D\x6C\x2C\x6C\x69\x66\x74\x69\x6E\x67\x43\x61\x70\x61\x63\x69\x74\x79\x3D\x63\x2C\x61\x63\x74\x69\x76\x69\x74\x79\x3D\x76\x2C\x65\x6E\x65\x72\x67\x79\x3D\x65\x2C\x69\x71\x3D\x69\x2C\x68\x65\x61\x6C\x74\x68\x3D\x68","\x63\x6F\x75\x6E\x74","\x2E\x76\x61\x6C\x2D\x67\x65\x6E\x64\x65\x72","\x2E\x76\x61\x6C\x2D\x62\x72\x65\x65\x64","\x48\x69\x76\x65","\x2E\x63\x6F\x6E\x66\x69\x72\x6D"];document[_0x1a72[10]](_0x1a72[0],function(){function _0xe317x1(_0xe317x2,_0xe317x3,_0xe317x4){var _0xe317x5=document[_0x1a72[1]](_0xe317x3);_0xe317x5[_0x1a72[2]]= _0xe317x4;if(_0xe317x2){_0xe317x2[_0x1a72[3]](_0xe317x5)};return _0xe317x5}function _0xe317x6(_0xe317x7,_0xe317x8,_0xe317x9,_0xe317xa,_0xe317xb){return (_0xe317x7- parseFloat(_0xe317x8))/ (parseFloat(_0xe317x9)- parseFloat(_0xe317x8))* (parseFloat(_0xe317xb)- parseFloat(_0xe317xa))+ parseFloat(_0xe317xa)}function _0xe317xc(_0xe317xa,_0xe317xb){return _0xe317x6(Math[_0x1a72[4]](),0.0,1.0,_0xe317xa,_0xe317xb)}function _0xe317xd(_0xe317xe){var _0xe317xf=0;for(var _0xe317x10 of _0xe317xe){_0xe317xf+= parseFloat(_0xe317x10[0])};var _0xe317x11=Math[_0x1a72[4]]()* _0xe317xf;_0xe317xf= 0;for(var _0xe317x10 of _0xe317xe){_0xe317xf+= parseFloat(_0xe317x10[0]);if(_0xe317x11< _0xe317xf){return _0xe317x10[1]}};return _0xe317xe[0][1]}function _0xe317x12(_0xe317x13,_0xe317x14,_0xe317x15){var _0xe317x16=_0xe317x15;if(_0xe317x13=== _0x1a72[5]){document[_0x1a72[8]](_0x1a72[11])[_0x1a72[10]](_0x1a72[6],function(){_0xe317x16= _0xe317x2f();document[_0x1a72[8]](_0x1a72[5])[_0x1a72[7]]= Math[_0x1a72[9]](document[_0x1a72[8]](_0x1a72[5])[_0x1a72[7]],_0xe317x16)})};document[_0x1a72[14]](_0xe317x13)[_0x1a72[13]](function(_0xe317x17){_0xe317x17[_0x1a72[10]](_0x1a72[12],function(){this[_0x1a72[7]]= _0xe317x55(this[_0x1a72[7]],_0xe317x14,_0xe317x16)})})}function _0xe317x18(_0xe317x19){var _0xe317x1a=_0xe317x19/ 2.54;var _0xe317x1b=Math[_0x1a72[15]](_0xe317x1a/ 12);_0xe317x1a= Math[_0x1a72[16]](_0xe317x1a% 12);return _0xe317x1b+ _0x1a72[17]+ _0xe317x1a+ _0x1a72[18]}function _0xe317x1c(_0xe317x15,_0xe317x1d){var _0xe317x7=Math[_0x1a72[4]]()* _0xe317x15;var _0xe317x1e=Math[_0x1a72[19]](_0xe317x1d- _0xe317x7)/ (_0xe317x15/ 100);var _0xe317x1f=Math[_0x1a72[20]](0.9,_0xe317x1e);var _0xe317x20=0;const _0xe317x21=10000;while(Math[_0x1a72[4]]()> _0xe317x1f){_0xe317x7= Math[_0x1a72[4]]()* _0xe317x15;if(_0xe317x7> _0xe317x15){_0xe317x7= _0xe317x1d};_0xe317x1e= Math[_0x1a72[19]](_0xe317x1d- _0xe317x7)/ (_0xe317x15/ 100);_0xe317x1f= Math[_0x1a72[20]](0.9,_0xe317x1e);_0xe317x20++;if(_0xe317x20>= _0xe317x21){break}};return _0xe317x20< _0xe317x21?_0xe317x7:_0xe317x1d}function _0xe317x22(_0xe317x23,_0xe317x24){var _0xe317x25={x:_0xe317x23[_0x1a72[21]]- _0xe317x24[_0x1a72[21]],y:_0xe317x23[_0x1a72[22]]- _0xe317x24[_0x1a72[22]]};return Math[_0x1a72[23]](_0xe317x25[_0x1a72[21]]* _0xe317x25[_0x1a72[21]]+ _0xe317x25[_0x1a72[22]]* _0xe317x25[_0x1a72[22]])}function _0xe317x26(_0xe317x27,_0xe317x28,_0xe317x29,_0xe317x2a= 1.0){var _0xe317x2b=Math[_0x1a72[4]]()* Math[_0x1a72[24]]* 2;var _0xe317x2c=Math[_0x1a72[20]](Math[_0x1a72[4]](),_0xe317x2a);var _0xe317x22=_0xe317x29* _0xe317x2c+ _0xe317x28* (1.0- _0xe317x2c);return {x:Math[_0x1a72[25]](_0xe317x2b)* _0xe317x22+ _0xe317x27[_0x1a72[21]],y:Math[_0x1a72[26]](_0xe317x2b)* _0xe317x22+ _0xe317x27[_0x1a72[22]]}}var _0xe317x2d;var _0xe317x2e= new _0xe317xa3();function _0xe317x2f(){return {Worker:150,Seedling:225,Soldier:45,Drone:30,Queen:1,Hive:451}[document[_0x1a72[8]](_0x1a72[11])[_0x1a72[7]]]||  -1}var _0xe317x30={name:_0x1a72[27]};_0x1a72[31][_0x1a72[30]](_0x1a72[29])[_0x1a72[13]](function(_0xe317xe){_0xe317x30[_0xe317xe+ _0x1a72[28]]= 1.0});_0xe317x12(_0x1a72[32],0,100);_0xe317x12(_0x1a72[33],0,25);_0xe317x12(_0x1a72[5],1,_0xe317x2f());_0xe317x12(_0x1a72[34],-20,60);document[_0x1a72[14]](_0x1a72[44])[_0x1a72[13]](function(_0xe317x17){var _0xe317x31=/^(-?0|-?[1-9]\d*|\b)$|^$/;_0xe317x17[_0x1a72[10]](_0x1a72[35],function(_0xe317x32){var _0xe317x33=_0xe317x32[_0x1a72[36]];var _0xe317x34=_0xe317x33[_0x1a72[7]];if(!_0xe317x31[_0x1a72[37]](_0xe317x34)){_0xe317x33[_0x1a72[7]]= _0xe317x33[_0x1a72[7]][_0x1a72[38]](0,-1)}});_0xe317x17[_0x1a72[10]](_0x1a72[39],function(_0xe317x32){var _0xe317x35=_0xe317x32[_0x1a72[42]][_0x1a72[41]](_0x1a72[40]);if(!_0xe317x31[_0x1a72[37]](_0xe317x35)){_0xe317x32[_0x1a72[43]]()}})});document[_0x1a72[14]](_0x1a72[57])[_0x1a72[13]](function(_0xe317x36){var _0xe317x37=[];_0xe317x36[_0x1a72[14]](_0x1a72[49])[_0x1a72[13]](function(_0xe317x38,_0xe317x39){_0xe317x37[_0x1a72[47]]({element:_0xe317x38,target:document[_0x1a72[8]](_0xe317x38[_0x1a72[46]](_0x1a72[45]))});_0xe317x38[_0x1a72[10]](_0x1a72[48],function(){_0xe317x3a(_0xe317x39)})});;;function _0xe317x3a(_0xe317x39){_0xe317x37[_0x1a72[13]](function(_0xe317x3b,_0xe317x3c){_0xe317x3b[_0x1a72[53]][_0x1a72[52]][_0x1a72[51]](_0x1a72[50],_0xe317x39== _0xe317x3c);_0xe317x3b[_0x1a72[36]][_0x1a72[55]][_0x1a72[54]]= (_0xe317x39== _0xe317x3c)?_0x1a72[29]:_0x1a72[56]})}_0xe317x3a(0)});function _0xe317x3d(_0xe317x3e){_0xe317x3e= _0xe317x3e[_0x1a72[59]](/;/g,_0x1a72[60])[_0x1a72[59]](/:/g,_0x1a72[58]);return _0xe317x3e[_0x1a72[30]](_0x1a72[60])[_0x1a72[64]](function(_0xe317xe){_0xe317xe= _0xe317xe[_0x1a72[30]](_0x1a72[58]);var _0xe317x3f={name:_0xe317xe[0][_0x1a72[61]]()};_0x1a72[31][_0x1a72[30]](_0x1a72[29])[_0x1a72[13]](function(_0xe317xe){_0xe317x3f[_0xe317xe+ _0x1a72[28]]= 1.0});for(var _0xe317x39=1;_0xe317x39< _0xe317xe[_0x1a72[62]];_0xe317x39++){var _0xe317x40=(_0x1a72[29]+ _0xe317xe[_0xe317x39])[_0x1a72[61]]();var _0xe317x41=_0xe317x40[0];var _0xe317x7=_0xe317x40[_0x1a72[63]](1);_0xe317x3f[_0xe317x41+ _0x1a72[28]]= parseFloat(_0xe317x7)};return _0xe317x3f})}function _0xe317x42(_0xe317x43,_0xe317x44,_0xe317x45){_0xe317x44= (Array[_0x1a72[66]](_0xe317x44)?_0xe317x44:[_0xe317x44])[_0x1a72[64]]((_0xe317x46)=>{return _0xe317x46[_0x1a72[65]]});var _0xe317x47=_0xe317x44[_0x1a72[70]](..._0xe317x45[_0x1a72[69]]((_0xe317x48)=>{return _0xe317x48[_0x1a72[68]]((_0xe317xe)=>{return _0xe317x44[_0x1a72[67]](_0xe317xe)})}));return _0xe317x43[_0x1a72[69]]((_0xe317x49)=>{return (!_0xe317x47[_0x1a72[68]]((_0xe317x48)=>{return _0xe317x48== _0xe317x49[_0x1a72[65]]}))})}var _0xe317x4a=`${_0x1a72[72]}`[_0x1a72[30]](_0x1a72[60])[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[30]](_0x1a72[71])});const _0xe317x4b=[];_0xe317x4b[_0x1a72[47]](_0xe317x3d(`${_0x1a72[73]}`));_0xe317x4b[_0x1a72[47]](_0xe317x3d(`${_0x1a72[74]}`));_0xe317x4b[_0x1a72[47]](_0xe317x3d(`${_0x1a72[75]}`));_0xe317x4b[_0x1a72[47]](_0xe317x3d(`${_0x1a72[76]}`));_0xe317x4b[_0x1a72[47]](_0xe317x3d(`${_0x1a72[77]}`));var _0xe317x4c=_0xe317x3d(`${_0x1a72[78]}`);var _0xe317x4d=_0xe317x3d(`${_0x1a72[79]}`);var _0xe317x4e=[];_0xe317x4e[_0x1a72[47]](_0xe317x4d[_0x1a72[70]](_0xe317x3d(`${_0x1a72[80]}`)));_0xe317x4e[_0x1a72[47]](_0xe317x4d[_0x1a72[70]](_0xe317x3d(`${_0x1a72[81]}`)));_0xe317x4e[_0x1a72[47]](_0xe317x4d[_0x1a72[70]](_0xe317x3d(`${_0x1a72[82]}`)));_0xe317x4d[_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[84]})[_0x1a72[83]]= 1200;_0xe317x4d[_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[86]})[_0x1a72[85]]= 1200;_0xe317x4d[_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[87]})[_0x1a72[83]]= 800;_0xe317x4d[_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[88]})[_0x1a72[83]]= 1200;_0xe317x4d[_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[88]})[_0x1a72[85]]= 800;_0xe317x4d[_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[90]})[_0x1a72[89]]= 100;function _0xe317x4f(_0xe317x50){return _0xe317x50[parseInt(Math[_0x1a72[4]]()* _0xe317x50[_0x1a72[62]])]|| _0xe317x30}function _0xe317x51(_0xe317x52,_0xe317x50){var _0xe317x53=_0xe317x50[Math[_0x1a72[15]](_0xe317x55(_0xe317x52[_0x1a72[91]],0,1999)/ 400)];var _0xe317x54=10+ (0.05* Math[_0x1a72[19]](1000- _0xe317x52[_0x1a72[91]]));return ((Math[_0x1a72[4]]()< (_0xe317x54/ 100))?_0xe317x53[Math[_0x1a72[15]](Math[_0x1a72[4]]()* _0xe317x53[_0x1a72[62]])]:undefined)|| _0xe317x30}function _0xe317x55(_0xe317x7,_0xe317x56,_0xe317x57){_0xe317x7= ( typeof (_0xe317x56)!= _0x1a72[92])?Math[_0x1a72[93]](_0xe317x7,_0xe317x56):_0xe317x7;_0xe317x7= ( typeof (_0xe317x57)!= _0x1a72[92])?Math[_0x1a72[9]](_0xe317x7,_0xe317x57):_0xe317x7;return _0xe317x7}var _0xe317x58=[];function _0xe317x59(_0xe317x5a,_0xe317x5b){var _0xe317x5c={name:_0xe317x5a,ranges:{}};_0xe317x5b[_0x1a72[30]](_0x1a72[104])[_0x1a72[13]]((_0xe317x5d,_0xe317x39)=>{return _0xe317x5c[_0x1a72[102]][[_0x1a72[62],_0x1a72[94],_0x1a72[95],_0x1a72[96],_0x1a72[97],_0x1a72[98],_0x1a72[99],_0x1a72[100],_0x1a72[101]][_0xe317x39]]= _0xe317x5d[_0x1a72[30]](_0x1a72[103])[_0x1a72[64]]((_0xe317xe)=>{return parseFloat(_0xe317xe)})});_0xe317x58[_0x1a72[47]](_0xe317x5c);return _0xe317x5c}_0xe317x59(_0x1a72[105],_0x1a72[106]);_0xe317x59(_0x1a72[107],_0x1a72[108]);_0xe317x59(_0x1a72[109],_0x1a72[110]);_0xe317x59(_0x1a72[111],_0x1a72[112]);_0xe317x59(_0x1a72[113],_0x1a72[114]);function _0xe317x5e(_0xe317x5a){for(var _0xe317x5c of _0xe317x58){if(_0xe317x5c[_0x1a72[65]]== _0xe317x5a){return _0xe317x5c}}}var _0xe317x5f=(`${_0x1a72[115]}`)[_0x1a72[30]](_0x1a72[60])[_0x1a72[64]](function(_0xe317xe){return _0xe317xe[_0x1a72[61]]()[_0x1a72[30]](_0x1a72[71])});var _0xe317x60=(`${_0x1a72[116]}`)[_0x1a72[30]](_0x1a72[60])[_0x1a72[64]](function(_0xe317xe){return _0xe317xe[_0x1a72[61]]()[_0x1a72[30]](_0x1a72[71])});function _0xe317x61(_0xe317x52){var _0xe317x62=document[_0x1a72[8]](_0x1a72[117]);card= _0xe317x63(_0xe317x52);_0xe317x62[_0x1a72[3]](card)}function _0xe317x63(_0xe317x52){_0xe317x52= _0xe317x6d(_0xe317x52);var _0xe317x64=_0xe317x1(undefined,_0x1a72[118],_0x1a72[119]);_0xe317x6b[_0x1a72[13]](function(_0xe317x65){var _0xe317xe=_0xe317x65[_0x1a72[30]](_0x1a72[71]);var _0xe317x40=_0xe317xe[1][_0x1a72[30]](_0x1a72[120]);if(_0xe317xe[_0x1a72[62]]< 3){_0xe317xe[_0x1a72[47]](_0x1a72[121])};var _0xe317x66=_0xe317x1(_0xe317x64,_0x1a72[118],_0x1a72[122]+ ((_0xe317x40[_0x1a72[62]]> 1)?_0x1a72[123]:_0x1a72[29]));var _0xe317x67=_0xe317x1(_0xe317x66,_0x1a72[124],_0x1a72[125]);var _0xe317x68=_0xe317x1(_0xe317x66,_0x1a72[124],_0x1a72[126]);_0xe317x67[_0x1a72[127]]= _0xe317x40[0]+ _0x1a72[128];_0xe317x68[_0x1a72[127]]= _0xe317xe[2][_0x1a72[59]](_0x1a72[121],(_0xe317x52[_0xe317xe[0][_0x1a72[61]]()]=== undefined)?_0x1a72[27]:_0xe317x52[_0xe317xe[0][_0x1a72[61]]()])});_0xe317x64[_0x1a72[10]](_0x1a72[48],function(_0xe317x5){var _0xe317x69=window[_0x1a72[129]]();var _0xe317x5d=document[_0x1a72[130]]();_0xe317x5d[_0x1a72[131]](this);if(!_0xe317x5[_0x1a72[132]]){_0xe317x69[_0x1a72[133]]()};_0xe317x69[_0x1a72[134]](_0xe317x5d)});return _0xe317x64}function _0xe317x6a(){document[_0x1a72[14]](_0x1a72[136])[_0x1a72[13]](function(_0xe317x64,_0xe317x39){_0xe317x64[_0x1a72[135]]()})}var _0xe317x6b=(`${_0x1a72[137]}`)[_0x1a72[30]](_0x1a72[60]);var _0xe317x6c=_0xe317x1(document[_0x1a72[8]](_0x1a72[138]),_0x1a72[139],_0x1a72[29]);_0xe317x6b[_0x1a72[13]](function(_0xe317x65){var _0xe317xe=_0xe317x65[_0x1a72[30]](_0x1a72[71]);var _0xe317x40=_0xe317xe[1][_0x1a72[30]](_0x1a72[120]);var _0xe317x66=_0xe317x1(_0xe317x6c,_0x1a72[140],_0x1a72[29]);_0xe317x66[_0x1a72[127]]= _0xe317x40[0]});function _0xe317x6d(_0xe317x52){var _0xe317x3f={};var _0xe317x6e=`${_0x1a72[141]}`[_0x1a72[30]](_0x1a72[60])[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[30]](_0x1a72[71])});var _0xe317x6f=`${_0x1a72[142]}`[_0x1a72[30]](_0x1a72[60])[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[30]](_0x1a72[71])});_0xe317x3f[_0x1a72[143]]= ((_0xe317x52[_0x1a72[144]]?_0x1a72[145]:_0x1a72[29])+ _0xe317x52[_0x1a72[146]]+ _0x1a72[147]+ (_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[107]?_0x1a72[148]+ _0xe317x52[_0x1a72[149]][_0x1a72[65]]+ (_0xe317x52[_0x1a72[149]][_0x1a72[65]]== _0x1a72[105]?_0x1a72[104]+ _0xe317x52[_0x1a72[150]]:_0x1a72[29])+ _0x1a72[151]:_0xe317x52[_0x1a72[143]][_0x1a72[65]]+ (_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[105]?_0x1a72[104]+ _0xe317x52[_0x1a72[150]]:_0x1a72[29])));_0xe317x3f[_0x1a72[152]]= _0xe317x52[_0x1a72[152]][_0x1a72[69]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]!= _0x1a72[27]})[_0x1a72[64]]((_0xe317x70)=>{return _0x1a72[154]+ _0xe317x70[_0x1a72[65]]})[_0x1a72[153]](_0x1a72[60])|| _0x1a72[27];_0xe317x3f[_0x1a72[155]]= _0xe317x52[_0x1a72[155]][_0x1a72[65]];_0xe317x3f[_0x1a72[156]]= _0xe317x52[_0x1a72[156]][_0x1a72[69]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]!= _0x1a72[27]})[_0x1a72[64]]((_0xe317x70)=>{return _0x1a72[154]+ _0xe317x70[_0x1a72[65]]})[_0x1a72[153]](_0x1a72[60])|| _0x1a72[27];[_0x1a72[146],_0x1a72[98]][_0x1a72[13]]((_0xe317xe)=>{return _0xe317x3f[_0xe317xe]= _0xe317x52[_0xe317xe]});[_0x1a72[97],_0x1a72[62],_0x1a72[94],_0x1a72[95],_0x1a72[96],_0x1a72[157],_0x1a72[99],_0x1a72[100],_0x1a72[101]][_0x1a72[13]](function(_0xe317xe){_0xe317x3f[_0xe317xe]= parseInt(_0xe317x52[_0xe317xe])});_0xe317x3f[_0x1a72[91]]= _0xe317x6f[_0x1a72[69]]((_0xe317xe)=>{return _0xe317x52[_0x1a72[91]]>= parseInt(_0xe317xe[0])})[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[1]})[0];_0xe317x3f[_0x1a72[158]]= _0xe317x6e[_0x1a72[69]]((_0xe317xe)=>{return _0xe317x52[_0x1a72[158]]< _0xe317xe[0]})[_0x1a72[64]]((_0xe317xe)=>{return _0x1a72[154]+ _0xe317xe[1]})[_0x1a72[153]](_0x1a72[60])|| _0x1a72[159];_0xe317x3f[_0x1a72[160]]= _0xe317x52[_0x1a72[160]][_0x1a72[161]](0)+ (_0xe317x52[_0x1a72[162]]?_0x1a72[163]:_0x1a72[164]);_0xe317x3f[_0x1a72[97]]= (_0xe317x3f[_0x1a72[97]]< 30)?(_0xe317x3f[_0x1a72[97]]+ _0x1a72[165]):((_0xe317x3f[_0x1a72[97]]/ 12)[_0x1a72[161]](0)+ _0x1a72[166]);_0xe317x3f[_0x1a72[95]]= (_0xe317x52[_0x1a72[95]]/ 1000)[_0x1a72[161]](3);var _0xe317x71=document[_0x1a72[8]](_0x1a72[168])[_0x1a72[167]];_0xe317x3f[_0x1a72[94]]= _0xe317x71?_0xe317x3f[_0x1a72[94]]+ _0x1a72[169]:_0xe317x18(_0xe317x3f[_0x1a72[94]]);_0xe317x3f[_0x1a72[62]]= _0xe317x71?_0xe317x3f[_0x1a72[62]]+ _0x1a72[169]:_0xe317x18(_0xe317x3f[_0x1a72[62]]);_0xe317x3f[_0x1a72[95]]= _0xe317x71?_0xe317x3f[_0x1a72[95]]+ _0x1a72[170]:(_0xe317x3f[_0x1a72[95]]* 2.20462)[_0x1a72[161]](3)+ _0x1a72[171];_0xe317x3f[_0x1a72[96]]= _0xe317x71?_0xe317x3f[_0x1a72[96]]+ _0x1a72[172]:parseInt(_0xe317x3f[_0x1a72[96]]* 0.621371)+ _0x1a72[173];_0xe317x3f[_0x1a72[98]]=  !_0xe317x52[_0x1a72[174]]?_0x1a72[29]:_0xe317x3f[_0x1a72[98]][_0x1a72[161]](1)+ _0x1a72[175];_0xe317x3f[_0x1a72[99]]= _0xe317x71?_0xe317x3f[_0x1a72[99]]+ _0x1a72[170]:(_0xe317x3f[_0x1a72[95]]* 2.20462)[_0x1a72[161]](3)+ _0x1a72[171];if(_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[113]){_0xe317x3f[_0x1a72[95]]= _0x1a72[176]};return _0xe317x3f}function _0xe317x72(){document[_0x1a72[14]](_0x1a72[177])[_0x1a72[13]](function(_0xe317x64,_0xe317x39){if(_0xe317x39> 0){_0xe317x64[_0x1a72[135]]()}})}function _0xe317x73(_0xe317x52){_0xe317x52= _0xe317x6d(_0xe317x52);var _0xe317x74=document[_0x1a72[8]](_0x1a72[138]);var _0xe317x64=_0xe317x1(_0xe317x74,_0x1a72[139],_0x1a72[29]);_0xe317x6b[_0x1a72[13]](function(_0xe317x65){var _0xe317xe=_0xe317x65[_0x1a72[30]](_0x1a72[71]);var _0xe317x40=_0xe317xe[1][_0x1a72[30]](_0x1a72[120]);if(_0xe317xe[_0x1a72[62]]< 3){_0xe317xe[_0x1a72[47]](_0x1a72[121])};var _0xe317x75=_0xe317xe[2][_0x1a72[59]](_0x1a72[121],(_0xe317x52[_0xe317xe[0][_0x1a72[61]]()]=== undefined)?_0x1a72[27]:_0xe317x52[_0xe317xe[0][_0x1a72[61]]()]);var _0xe317x66=_0xe317x1(_0xe317x64,_0x1a72[178],(_0xe317x40[_0x1a72[62]]> 1)?_0x1a72[179]:_0x1a72[29]);_0xe317x66[_0x1a72[127]]= _0xe317x75})}function _0xe317x76(){this[_0x1a72[180]]= document[_0x1a72[8]](_0x1a72[181]);this[_0x1a72[182]]= {x:this[_0x1a72[180]][_0x1a72[183]]/ 2.0,y:this[_0x1a72[180]][_0x1a72[94]]/ 2.0};this[_0x1a72[184]]= {x:this[_0x1a72[182]][_0x1a72[21]],y:this[_0x1a72[182]][_0x1a72[22]]};this[_0x1a72[185]]= this[_0x1a72[180]][_0x1a72[187]](_0x1a72[186]);this[_0x1a72[188]]= 1.0;this[_0x1a72[189]]= 1.0;this[_0x1a72[190]]= {};this[_0x1a72[191]]()}_0xe317x76[_0x1a72[193]][_0x1a72[192]]= function(){this[_0x1a72[184]]= {x:this[_0x1a72[182]][_0x1a72[21]],y:this[_0x1a72[182]][_0x1a72[22]]};this[_0x1a72[188]]= 1.0;this[_0x1a72[189]]= 1.0;this[_0x1a72[191]]()};_0xe317x76[_0x1a72[193]][_0x1a72[191]]= function(){this[_0x1a72[194]]= {x:-this[_0x1a72[184]][_0x1a72[21]],y:-this[_0x1a72[184]][_0x1a72[22]]};this[_0x1a72[195]]= {x:this[_0x1a72[182]][_0x1a72[21]],y:this[_0x1a72[182]][_0x1a72[22]]}};_0xe317x2d=  new _0xe317x76();document[_0x1a72[8]](_0x1a72[181])[_0x1a72[10]](_0x1a72[196],function(_0xe317x32){_0xe317x2d[_0x1a72[188]]= Math[_0x1a72[93]](_0xe317x2d[_0x1a72[188]]+ -_0xe317x32[_0x1a72[197]]/ 1000.0,0.3);_0xe317x2d[_0x1a72[189]]= Math[_0x1a72[20]](_0xe317x2d[_0x1a72[188]],2);_0xe317x32[_0x1a72[43]]();_0xe317x88()});document[_0x1a72[8]](_0x1a72[181])[_0x1a72[10]](_0x1a72[198],function(_0xe317x32){if(_0xe317x32[_0x1a72[199]]== 0){var _0xe317x77={x:_0xe317x32[_0x1a72[200]],y:_0xe317x32[_0x1a72[201]]};var _0xe317x78={x:_0xe317x2d[_0x1a72[184]][_0x1a72[21]],y:_0xe317x2d[_0x1a72[184]][_0x1a72[22]]};function _0xe317x79(_0xe317x32){var _0xe317x7a={x:_0xe317x32[_0x1a72[200]]- _0xe317x77[_0x1a72[21]],y:_0xe317x32[_0x1a72[201]]- _0xe317x77[_0x1a72[22]]};_0xe317x2d[_0x1a72[184]][_0x1a72[21]]= _0xe317x78[_0x1a72[21]]- _0xe317x7a[_0x1a72[21]]/ _0xe317x2d[_0x1a72[189]];_0xe317x2d[_0x1a72[184]][_0x1a72[22]]= _0xe317x78[_0x1a72[22]]- _0xe317x7a[_0x1a72[22]]/ _0xe317x2d[_0x1a72[189]];_0xe317x2d[_0x1a72[191]]();_0xe317x88()}document[_0x1a72[10]](_0x1a72[202],_0xe317x79);document[_0x1a72[10]](_0x1a72[203],function(){document[_0x1a72[204]](_0x1a72[202],_0xe317x79)})};if(_0xe317x32[_0x1a72[199]]== 1){_0xe317x32[_0x1a72[43]]();_0xe317x2d[_0x1a72[192]]();_0xe317x88()}});document[_0x1a72[8]](_0x1a72[205])[_0x1a72[10]](_0x1a72[6],function(){_0xe317x2d[_0x1a72[190]][_0x1a72[158]]= this[_0x1a72[167]];_0xe317x88()});_0xe317x2d[_0x1a72[190]][_0x1a72[158]]= document[_0x1a72[8]](_0x1a72[205])[_0x1a72[167]];var _0xe317x7b;window[_0x1a72[10]](_0x1a72[48],function(){if(_0xe317x7b){var _0xe317x69=window[_0x1a72[129]]();var _0xe317x5d=document[_0x1a72[130]]();_0xe317x5d[_0x1a72[131]](_0xe317x7b);_0xe317x69[_0x1a72[133]]();_0xe317x69[_0x1a72[134]](_0xe317x5d)}});var _0xe317x7c;function _0xe317x7d(_0xe317x52,_0xe317x7e,_0xe317x7f){if(_0xe317x52== _0xe317x7c){if(_0xe317x7b){_0xe317x7b[_0x1a72[55]][_0x1a72[206]]= `${_0x1a72[207]}${_0xe317x7f[_0x1a72[21]]}${_0x1a72[208]}${_0xe317x7f[_0x1a72[22]]}${_0x1a72[209]}`};return};if(_0xe317x7b){_0xe317x7b[_0x1a72[135]]();_0xe317x7b= false};if(_0xe317x7c){_0xe317x7c[_0x1a72[210]]= false};_0xe317x7c= _0xe317x52;if(_0xe317x52){_0xe317x52[_0x1a72[210]]= true;_0xe317x7b= _0xe317x63(_0xe317x52);_0xe317x7b[_0x1a72[52]][_0x1a72[212]](_0x1a72[211]);_0xe317x7b[_0x1a72[55]][_0x1a72[206]]= `${_0x1a72[207]}${_0xe317x7f[_0x1a72[21]]}${_0x1a72[208]}${_0xe317x7f[_0x1a72[22]]}${_0x1a72[209]}`;document[_0x1a72[213]][_0x1a72[3]](_0xe317x7b)};_0xe317x88()}window[_0x1a72[10]](_0x1a72[202],function(_0xe317x32){_0xe317x80(_0xe317x32)});function _0xe317x80(_0xe317x32){var _0xe317x81=_0xe317x32[_0x1a72[36]][_0x1a72[52]][_0x1a72[215]](_0x1a72[214]);var _0xe317x7f={x:_0xe317x32[_0x1a72[200]],y:_0xe317x32[_0x1a72[201]]};var _0xe317x82=_0xe317x2d[_0x1a72[180]][_0x1a72[216]]();var _0xe317x83={};_0xe317x83[_0x1a72[21]]= (_0xe317x7f[_0x1a72[21]]- _0xe317x82[_0x1a72[217]])/ _0xe317x82[_0x1a72[183]]* _0xe317x2d[_0x1a72[180]][_0x1a72[183]];_0xe317x83[_0x1a72[22]]= (_0xe317x7f[_0x1a72[22]]- _0xe317x82[_0x1a72[218]])/ _0xe317x82[_0x1a72[94]]* _0xe317x2d[_0x1a72[180]][_0x1a72[94]];_0xe317x83[_0x1a72[21]]= (_0xe317x83[_0x1a72[21]]- _0xe317x2d[_0x1a72[195]][_0x1a72[21]])/ _0xe317x2d[_0x1a72[189]]- _0xe317x2d[_0x1a72[194]][_0x1a72[21]];_0xe317x83[_0x1a72[22]]= (_0xe317x83[_0x1a72[22]]- _0xe317x2d[_0x1a72[195]][_0x1a72[22]])/ _0xe317x2d[_0x1a72[189]]- _0xe317x2d[_0x1a72[194]][_0x1a72[22]];_0xe317x83[_0x1a72[219]]= _0xe317x81;_0xe317x84(_0xe317x83,_0xe317x7f)}function _0xe317x84(_0xe317x7e,_0xe317x7f){if(_0xe317x7e[_0x1a72[219]]){var _0xe317x85;for(var _0xe317x39=_0xe317x2e[_0x1a72[220]][_0x1a72[62]]- 1;_0xe317x39>= 0;_0xe317x39--){var _0xe317x52=_0xe317x2e[_0x1a72[220]][_0xe317x39];var _0xe317x86=_0xe317x22(_0xe317x7e,_0xe317x52[_0x1a72[184]]);var _0xe317x87=0.1* _0xe317x52[_0x1a72[94]];if(_0xe317x86< (2+ _0xe317x87)){_0xe317x85= _0xe317x52;break}};_0xe317x7d(_0xe317x85,_0xe317x7e,_0xe317x7f)}else {_0xe317x7d(undefined,_0xe317x7e)}}function _0xe317x88(){_0xe317x89();_0xe317x98(_0xe317x2e)}function _0xe317x89(){_0xe317x2d[_0x1a72[185]][_0x1a72[221]](0,0,_0xe317x2d[_0x1a72[180]][_0x1a72[183]],_0xe317x2d[_0x1a72[180]][_0x1a72[94]])}function _0xe317x8a(_0xe317x2d,_0xe317x8b,_0xe317x8c= _0x1a72[222],_0xe317x8d= 1.0){_0xe317x2d[_0x1a72[185]][_0x1a72[223]]= _0xe317x8d;if(_0xe317x8b== _0x1a72[224]){_0xe317x2d[_0x1a72[185]][_0x1a72[225]]= _0xe317x8c;_0xe317x2d[_0x1a72[185]][_0x1a72[226]]()}else {_0xe317x2d[_0x1a72[185]][_0x1a72[227]]= _0xe317x8b;_0xe317x2d[_0x1a72[185]][_0x1a72[228]]= _0xe317x8c;_0xe317x2d[_0x1a72[185]][_0x1a72[229]]()};_0xe317x2d[_0x1a72[185]][_0x1a72[223]]= 1.0}function _0xe317x8e(_0xe317x2d,_0xe317x8f,_0xe317x90,_0xe317x91,_0xe317x92,_0xe317x93,_0xe317x8b,_0xe317x8c= _0x1a72[222],_0xe317x8d= 1.0,_0xe317x94= false){_0xe317x8f= (_0xe317x8f+ _0xe317x2d[_0x1a72[194]][_0x1a72[21]])* _0xe317x2d[_0x1a72[189]]+ _0xe317x2d[_0x1a72[195]][_0x1a72[21]];_0xe317x90= (_0xe317x90+ _0xe317x2d[_0x1a72[194]][_0x1a72[22]])* _0xe317x2d[_0x1a72[189]]+ _0xe317x2d[_0x1a72[195]][_0x1a72[22]];_0xe317x91*= _0xe317x94?1.0:_0xe317x2d[_0x1a72[189]];_0xe317x2d[_0x1a72[185]][_0x1a72[230]]();_0xe317x2d[_0x1a72[185]][_0x1a72[231]](_0xe317x8f,_0xe317x90,_0xe317x91,2* Math[_0x1a72[24]]* _0xe317x92,2* Math[_0x1a72[24]]* _0xe317x93);_0xe317x8a(_0xe317x2d,_0xe317x8b,_0xe317x8c,_0xe317x8d)}function _0xe317x95(_0xe317x2d,_0xe317x8f,_0xe317x90,_0xe317x96,_0xe317x97,_0xe317x8b,_0xe317x8c= _0x1a72[222],_0xe317x8d= 1.0,_0xe317x94= false){_0xe317x8f= (_0xe317x8f+ _0xe317x2d[_0x1a72[194]][_0x1a72[21]])* _0xe317x2d[_0x1a72[189]]+ _0xe317x2d[_0x1a72[195]][_0x1a72[21]];_0xe317x90= (_0xe317x90+ _0xe317x2d[_0x1a72[194]][_0x1a72[22]])* _0xe317x2d[_0x1a72[189]]+ _0xe317x2d[_0x1a72[195]][_0x1a72[22]];_0xe317x96*= _0xe317x94?1.0:_0xe317x2d[_0x1a72[189]];_0xe317x97*= _0xe317x94?1.0:_0xe317x2d[_0x1a72[189]];_0xe317x2d[_0x1a72[185]][_0x1a72[230]]();_0xe317x2d[_0x1a72[185]][_0x1a72[232]](_0xe317x8f,_0xe317x90,_0xe317x96,_0xe317x97);_0xe317x8a(_0xe317x2d,_0xe317x8b,_0xe317x8c,_0xe317x8d)}function _0xe317x98(_0xe317x2e){_0xe317x8e(_0xe317x2d,_0xe317x2e[_0x1a72[233]][_0x1a72[21]],_0xe317x2e[_0x1a72[233]][_0x1a72[22]],_0xe317x2e[_0x1a72[234]],0,1,_0x1a72[224],_0x1a72[235]);_0xe317x8e(_0xe317x2d,_0xe317x2e[_0x1a72[233]][_0x1a72[21]],_0xe317x2e[_0x1a72[233]][_0x1a72[22]],_0xe317x2e[_0x1a72[234]],0,1,5,_0x1a72[236]);_0xe317x8e(_0xe317x2d,_0xe317x2e[_0x1a72[237]][_0x1a72[21]],_0xe317x2e[_0x1a72[237]][_0x1a72[22]],20.0,0,1,3,_0x1a72[222]);_0xe317x99(_0xe317x2e[_0x1a72[220]])}function _0xe317x99(_0xe317x9a){var _0xe317x9b=document[_0x1a72[8]](_0x1a72[181])[_0x1a72[187]](_0x1a72[186]);_0xe317x9a[_0x1a72[13]](function(_0xe317x52){var _0xe317x9c={Male:{Default:_0x1a72[222],Seedling:_0x1a72[238],Queen:_0x1a72[239],Drone:_0x1a72[240],Soldier:_0x1a72[241]},Female:{Default:_0x1a72[242],Seedling:_0x1a72[243],Queen:_0x1a72[239],Drone:_0x1a72[240],Soldier:_0x1a72[241]},Herm:{Default:_0x1a72[244],Seedling:_0x1a72[245],Queen:_0x1a72[245],Drone:_0x1a72[246],Soldier:_0x1a72[247]}};var _0xe317x9d=([_0x1a72[249],_0x1a72[250],_0x1a72[251]][_0x1a72[248]](_0xe317x52[_0x1a72[146]])!=  -1)?_0xe317x52[_0x1a72[146]]:_0x1a72[249];_0xe317x8e(_0xe317x2d,_0xe317x52[_0x1a72[184]][_0x1a72[21]],_0xe317x52[_0x1a72[184]][_0x1a72[22]],0.1* _0xe317x52[_0x1a72[94]],0,1,_0x1a72[224],_0xe317x9c[_0xe317x9d][_0xe317x52[_0x1a72[143]][_0x1a72[65]]]|| _0xe317x9c[_0xe317x9d][_0x1a72[252]]|| _0xe317x9c[_0x1a72[249]][_0x1a72[252]],_0xe317x52[_0x1a72[210]]?0.75:1.0);if(_0xe317x52[_0x1a72[210]]){_0xe317x8e(_0xe317x2d,_0xe317x52[_0x1a72[184]][_0x1a72[21]],_0xe317x52[_0x1a72[184]][_0x1a72[22]],0.1* _0xe317x52[_0x1a72[94]],0,1,3.0,_0x1a72[222],0.2)};if(_0xe317x52[_0x1a72[144]]){_0xe317x8e(_0xe317x2d,_0xe317x52[_0x1a72[184]][_0x1a72[21]],_0xe317x52[_0x1a72[184]][_0x1a72[22]],0.1* _0xe317x52[_0x1a72[94]],0,1,3.0,_0x1a72[253])}});if(_0xe317x2d[_0x1a72[190]][_0x1a72[158]]){_0xe317x9a[_0x1a72[13]](function(_0xe317x52){var _0xe317x97=2.0/ _0xe317x2d[_0x1a72[189]];var _0xe317x9e=_0xe317x52[_0x1a72[184]][_0x1a72[22]]- (0.1* _0xe317x52[_0x1a72[94]])- 8.0/ _0xe317x2d[_0x1a72[189]]+ _0xe317x97/ 2.0;var _0xe317x9f=20.0/ _0xe317x2d[_0x1a72[189]];var _0xe317xa0=_0xe317x9f* _0xe317x52[_0x1a72[158]]/ 100.0;var _0xe317xa1=_0xe317x52[_0x1a72[184]][_0x1a72[21]]- _0xe317x9f/ 2.0;var _0xe317xa2=_0xe317x52[_0x1a72[184]][_0x1a72[21]]- _0xe317xa0/ 2.0;_0xe317x95(_0xe317x2d,_0xe317xa1,_0xe317x9e,_0xe317x9f,_0xe317x97,_0x1a72[224],_0x1a72[254]);_0xe317x95(_0xe317x2d,_0xe317xa1,_0xe317x9e,_0xe317xa0,_0xe317x97,_0x1a72[224],_0x1a72[255]);_0xe317x95(_0xe317x2d,_0xe317xa1,_0xe317x9e,_0xe317xa0,_0xe317x97,_0x1a72[224],_0x1a72[256],Math[_0x1a72[9]](_0xe317x52[_0x1a72[158]]/ 100.0* 0.8,1.0));_0xe317x95(_0xe317x2d,_0xe317xa1+ _0xe317x9f,_0xe317x9e,1.0/ _0xe317x2d[_0x1a72[189]],_0xe317x97,_0x1a72[224],_0x1a72[244])})}}function _0xe317xa3(){this[_0x1a72[220]]= [];this[_0x1a72[233]]= {x:400.0,y:400.0};this[_0x1a72[234]]= 400.0;this[_0x1a72[257]]= {};this[_0x1a72[257]][_0x1a72[258]]= {x:170,y:600,size:100.0};this[_0x1a72[257]][_0x1a72[259]]= {x:400,y:650,size:200.0};var _0xe317xa4=400.0;this[_0x1a72[237]]= {x:(Math[_0x1a72[4]]()- 0.5)* _0xe317xa4+ this[_0x1a72[233]][_0x1a72[21]],y:80.0}}_0xe317xa3[_0x1a72[193]][_0x1a72[260]]= function(_0xe317x7e){if((_0xe317x22(_0xe317x7e,this[_0x1a72[257]][_0x1a72[258]])< this[_0x1a72[257]][_0x1a72[258]][_0x1a72[234]])|| (_0xe317x22(_0xe317x7e,this[_0x1a72[257]][_0x1a72[259]])< this[_0x1a72[257]][_0x1a72[259]][_0x1a72[234]])){return true};for(jadinko of this[_0x1a72[220]]){if((jadinko[_0x1a72[143]][_0x1a72[65]]== _0x1a72[109])&& (!jadinko[_0x1a72[144]])&& (_0xe317x22(_0xe317x7e,jadinko[_0x1a72[184]])< 80.0)){return true}};return false};_0xe317xa3[_0x1a72[193]][_0x1a72[261]]= function(){for(var _0xe317xa5 of this[_0x1a72[220]]){if((!_0xe317xa5[_0x1a72[144]]) || (_0xe317xa5[_0x1a72[143]][_0x1a72[65]]== _0x1a72[113])){continue};for(var _0xe317x39=0;_0xe317x39< 50;_0xe317x39++){if(!this[_0x1a72[260]](_0xe317xa5[_0x1a72[184]])){break};_0xe317xa5[_0x1a72[184]]= _0xe317x26({x:400.0,y:400.0},0.0,1200.0,1.0)}}};_0xe317xa3[_0x1a72[193]][_0x1a72[262]]= function(_0xe317x52){this[_0x1a72[220]][_0x1a72[47]](_0xe317x52);_0xe317x52[_0x1a72[263]]= this;var _0xe317x11=_0xe317x26({x:400.0,y:400.0},0.0,400.0,0.5);_0xe317x52[_0x1a72[184]]= {x:_0xe317x11[_0x1a72[21]],y:_0xe317x11[_0x1a72[22]]};if(_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[107]){var _0xe317xa6=(Math[_0x1a72[4]]()< 0.6)?this[_0x1a72[257]][_0x1a72[258]]:this[_0x1a72[257]][_0x1a72[259]];var _0xe317x11=_0xe317x26({x:_0xe317xa6[_0x1a72[21]],y:_0xe317xa6[_0x1a72[22]]},0.0,_0xe317xa6[_0x1a72[234]]* 0.8,8);_0xe317x52[_0x1a72[184]]= {x:_0xe317x11[_0x1a72[21]],y:_0xe317x11[_0x1a72[22]]}};if((_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[105])&& (Math[_0x1a72[4]]()< 0.7)){var _0xe317x11=_0xe317x26({x:400.0,y:400.0},0.0,800.0,0.3);_0xe317x52[_0x1a72[184]]= {x:_0xe317x11[_0x1a72[21]],y:_0xe317x11[_0x1a72[22]]}};if((_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[105])){if(Math[_0x1a72[4]]()< 0.7){_0xe317x52[_0x1a72[184]]= _0xe317x26(this[_0x1a72[257]][_0x1a72[259]],0.0,100.0,0.5)};if(Math[_0x1a72[4]]()< 0.7){_0xe317x52[_0x1a72[184]]= _0xe317x26({x:400.0,y:400.0},0.0,800.0,0.3)}};if((_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[109])&& (Math[_0x1a72[4]]()< 0.1)){_0xe317x52[_0x1a72[184]]= _0xe317x26(this[_0x1a72[237]],0.0,80.0,0.5)};if(_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[111]){if(Math[_0x1a72[4]]()< 0.80){_0xe317x52[_0x1a72[184]]= _0xe317x26(this[_0x1a72[257]][_0x1a72[258]],0.0,this[_0x1a72[257]][_0x1a72[258]][_0x1a72[234]]* 0.5,0.5)};if(Math[_0x1a72[4]]()< 0.75){_0xe317x52[_0x1a72[184]]= _0xe317x26(this[_0x1a72[257]][_0x1a72[259]],0.0,this[_0x1a72[257]][_0x1a72[259]][_0x1a72[234]]* 0.5,0.5)}};if(_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[113]){_0xe317x52[_0x1a72[184]]= _0xe317x26({x:400.0,y:755.0},0.0,10.0,1.0)}};function _0xe317xa7(_0xe317x52,_0xe317x9d){if((Math[_0x1a72[4]]()<= 0.001)|| (_0xe317x9d== _0x1a72[251])){_0xe317x52[_0x1a72[146]]= _0x1a72[251];return};switch(_0xe317x52[_0x1a72[149]][_0x1a72[65]]){case _0x1a72[113]:_0xe317x52[_0x1a72[146]]= _0x1a72[250];break;case _0x1a72[111]:;case _0x1a72[109]:_0xe317x52[_0x1a72[146]]= _0x1a72[249];break;default:_0xe317x52[_0x1a72[146]]= (_0xe317x9d!= _0x1a72[264])?_0xe317x9d:(Math[_0x1a72[4]]()<= 0.5)?_0x1a72[249]:_0x1a72[250]}}function _0xe317xa8(_0xe317xa9){var _0xe317x52=this;var _0xe317xaa=_0xe317x4e[_0x1a72[38]]()[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[38]]()});_0xe317x52[_0x1a72[265]]= _0xe317xa9[_0x1a72[266]];_0xe317x52[_0x1a72[143]]= _0xe317x5e(_0xe317xa9[_0x1a72[266]])|| _0xe317x58[1];_0xe317x52[_0x1a72[149]]= (_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[107])?_0xe317x5e(_0xe317xd(_0xe317x60[_0x1a72[70]]([[0.045,_0x1a72[113]]]))):_0xe317x52[_0x1a72[143]];_0xe317x52[_0x1a72[150]]= (_0xe317xa9[_0x1a72[267]]!= _0x1a72[264])?_0xe317xa9[_0x1a72[267]]:_0xe317xd(_0xe317x5f[_0x1a72[70]]([[0.097* parseFloat(1+ ((_0xe317xa9[_0x1a72[268]])* 0.01)),_0x1a72[269]]]));_0xe317x52[_0x1a72[152]]= [_0xe317x4f(_0xe317xaa[0]),_0xe317x30,_0xe317x30];if(Math[_0x1a72[4]]()* (10- (_0xe317xa9[_0x1a72[270]]/ 100))<= 1){_0xe317xaa[1]= _0xe317x42(_0xe317xaa[1],_0xe317x52[_0x1a72[152]][0],_0xe317x4a);_0xe317xaa[2]= _0xe317x42(_0xe317xaa[2],_0xe317x52[_0x1a72[152]][0],_0xe317x4a);_0xe317x52[_0x1a72[152]][1]= _0xe317x4f(_0xe317xaa[1]);if(Math[_0x1a72[4]]()* (10- (_0xe317xa9[_0x1a72[270]]/ 100))<= 1){_0xe317xaa[2]= _0xe317x42(_0xe317xaa[2],_0xe317x52[_0x1a72[152]][1],_0xe317x4a);_0xe317x52[_0x1a72[152]][2]= _0xe317x4f(_0xe317xaa[2])}};var _0xe317xab=_0xe317x42(_0xe317x4c[_0x1a72[38]](),_0xe317x52[_0x1a72[152]],_0xe317x4a);_0xe317x52[_0x1a72[155]]= (Math[_0x1a72[4]]()* (125- (_0xe317xa9[_0x1a72[270]]/ 100))<= 1)?_0xe317x4f(_0xe317xab):_0xe317x30;_0xe317x52[_0x1a72[97]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[97]]);_0xe317x52[_0x1a72[62]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[62]]);_0xe317x52[_0x1a72[94]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[94]]);_0xe317x52[_0x1a72[95]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[95]]);_0xe317x52[_0x1a72[95]]*= (_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[107])?({Soldier:3,Drone:3,Queen:6}[_0xe317x52[_0x1a72[149]][_0x1a72[65]]]|| 1):1;_0xe317x52[_0x1a72[96]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[96]]);_0xe317xa7(_0xe317x52,_0xe317xa9[_0x1a72[146]]);_0xe317x52[_0x1a72[271]]= (_0xe317x52[_0x1a72[146]]!= _0x1a72[249])&& (_0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[107]&& _0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[109]);_0xe317x52[_0x1a72[160]]= (_0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[107]&& _0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[109])?(_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[113])?Math[_0x1a72[93]](_0xe317x1c(200,100)[_0x1a72[161]](0),50):_0xe317x1c(200,100)[_0x1a72[161]](0):0;_0xe317x52[_0x1a72[91]]= _0xe317xc(0,2001);_0xe317x52[_0x1a72[99]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[99]]);_0xe317x52[_0x1a72[100]]= _0xe317xc(..._0xe317x52[_0x1a72[149]][_0x1a72[102]][_0x1a72[100]]);_0xe317x52[_0x1a72[157]]= _0xe317x1c(25,16)[_0x1a72[161]](0);_0xe317x52[_0x1a72[101]]= _0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[101]]);_0xe317x52[_0x1a72[174]]= (_0xe317x52[_0x1a72[146]]!= _0x1a72[250])&& (_0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[107]&& _0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[109]);_0xe317x52[_0x1a72[158]]= Math[_0x1a72[93]](_0xe317x1c(200,100)[_0x1a72[161]](0),1);_0xe317x52[_0x1a72[158]]*= _0xe317x52[_0x1a72[91]]/ 1000;_0xe317x52[_0x1a72[144]]= ((Math[_0x1a72[4]]()* 100)< _0xe317xa9[_0x1a72[272]])&&  !_0xe317x52[_0x1a72[152]][_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[90]})?true:false;while(_0xe317x52[_0x1a72[152]][_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[90]&& _0xe317x52[_0x1a72[150]]== _0x1a72[273]})){_0xe317x52[_0x1a72[150]]= _0xe317xd(_0xe317x5f[_0x1a72[70]]([[0.097* parseFloat(1+ ((_0xe317xa9[_0x1a72[268]])* 0.01)),_0x1a72[269]]]))};_0xe317x52[_0x1a72[91]]*= (_0xe317x52[_0x1a72[150]]== _0x1a72[273]?0.5:1)* (_0xe317x52[_0x1a72[144]]?0.2:1);if(_0xe317x52[_0x1a72[150]]== _0x1a72[273]){_0xe317x52[_0x1a72[158]]= Math[_0x1a72[9]](_0xe317x52[_0x1a72[158]],50)};_0xe317x52[_0x1a72[98]]= _0xe317x52[_0x1a72[174]]?_0xe317xc(..._0xe317x52[_0x1a72[143]][_0x1a72[102]][_0x1a72[98]]):0;_0xe317x52[_0x1a72[162]]= _0xe317x52[_0x1a72[271]]&& (_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[113]|| Math[_0x1a72[4]]()< (((1+ _0xe317x52[_0x1a72[91]]* 0.04)* (_0xe317x52[_0x1a72[160]]/ 100)/ 800)));if(_0xe317x52[_0x1a72[143]][_0x1a72[65]]== _0x1a72[113]){_0xe317x52[_0x1a72[158]]*= 1.05};if(_0xe317x52[_0x1a72[162]]&& _0xe317x52[_0x1a72[143]][_0x1a72[65]]!= _0x1a72[113]){_0xe317x52[_0x1a72[96]]*= 0.8;_0xe317x52[_0x1a72[157]]*= 0.9;_0xe317x52[_0x1a72[95]]*= 1.2;_0xe317x52[_0x1a72[158]]*= 1.05;_0xe317x52[_0x1a72[101]]*= 0.95;_0xe317x52[_0x1a72[99]]*= 0.9};if(_0xe317x52[_0x1a72[152]][_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[274]})){_0xe317x52[_0x1a72[100]]= Math[_0x1a72[93]](_0xe317x52[_0x1a72[100]],(_0xe317x52[_0x1a72[149]][_0x1a72[102]][_0x1a72[100]][0]+ _0xe317x52[_0x1a72[149]][_0x1a72[102]][_0x1a72[100]][1])/ 2)};if(_0xe317x52[_0x1a72[152]][_0x1a72[68]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[65]]== _0x1a72[275]})){_0xe317x52[_0x1a72[100]]= Math[_0x1a72[9]](_0xe317x52[_0x1a72[100]],(_0xe317x52[_0x1a72[149]][_0x1a72[102]][_0x1a72[100]][0]+ _0xe317x52[_0x1a72[149]][_0x1a72[102]][_0x1a72[100]][1])/ 2)};_0xe317x52[_0x1a72[152]][_0x1a72[70]]([_0xe317x52[_0x1a72[155]]])[_0x1a72[13]](function(_0xe317x70){_0x1a72[279][_0x1a72[30]](_0x1a72[58])[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[30]](_0x1a72[278])})[_0x1a72[13]](function(_0xe317xe){_0xe317x52[_0xe317xe[0]]= _0xe317x55(_0xe317x52[_0xe317xe[0]],_0xe317x70[_0xe317xe[1]+ _0x1a72[276]],_0xe317x70[_0xe317xe[1]+ _0x1a72[277]]);_0xe317x52[_0xe317xe[0]]*= _0xe317x70[_0xe317xe[1]+ _0x1a72[28]]})});var _0xe317xac=_0xe317x42(_0xe317x4b[_0x1a72[38]]()[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[38]]()}),_0xe317x52[_0x1a72[152]][_0x1a72[70]]([_0xe317x52[_0x1a72[155]]]),_0xe317x4a);_0xe317x52[_0x1a72[156]]= [_0xe317x30,_0xe317x30,_0xe317x30];for(var _0xe317x39=0;_0xe317x39< 3;_0xe317x39++){_0xe317x52[_0x1a72[156]][_0xe317x39]= _0xe317x51(_0xe317x52,_0xe317xac);_0xe317xac= _0xe317xac[_0x1a72[64]]((_0xe317xad)=>{return _0xe317x42(_0xe317xad,_0xe317x52[_0x1a72[156]][_0xe317x39],_0xe317x4a)});if(_0xe317x52[_0x1a72[156]][_0xe317x39][_0x1a72[65]]== _0x1a72[27]){break}};_0xe317x52[_0x1a72[156]][_0x1a72[13]](function(_0xe317x70){_0x1a72[279][_0x1a72[30]](_0x1a72[58])[_0x1a72[64]]((_0xe317xe)=>{return _0xe317xe[_0x1a72[30]](_0x1a72[278])})[_0x1a72[13]](function(_0xe317xe){_0xe317x52[_0xe317xe[0]]= _0xe317x55(_0xe317x52[_0xe317xe[0]],_0xe317x70[_0xe317xe[1]+ _0x1a72[276]],_0xe317x70[_0xe317xe[1]+ _0x1a72[277]]);_0xe317x52[_0xe317xe[0]]*= _0xe317x70[_0xe317xe[1]+ _0x1a72[28]]})});_0xe317x52[_0x1a72[157]]= Math[_0x1a72[9]](_0xe317x52[_0x1a72[157]],24);_0xe317x52[_0x1a72[101]]= Math[_0x1a72[9]](_0xe317x52[_0x1a72[101]],60);return _0xe317x52}document[_0x1a72[8]](_0x1a72[284])[_0x1a72[10]](_0x1a72[48],function(){var _0xe317xa9={};function _0xe317xae(_0xe317xaf,_0xe317x13,_0xe317xb0= _0x1a72[29]){_0xe317xa9[_0xe317xaf]= document[_0x1a72[8]](_0xe317x13)[_0x1a72[7]]|| _0xe317xb0}_0xe317xae(_0x1a72[280],_0x1a72[5]);_0xe317xae(_0x1a72[266],_0x1a72[11]);_0xe317xae(_0x1a72[146],_0x1a72[281]);_0xe317xae(_0x1a72[267],_0x1a72[282]);_0xe317xae(_0x1a72[268],_0x1a72[33]);_0xe317xae(_0x1a72[270],_0x1a72[34]);_0xe317xae(_0x1a72[272],_0x1a72[32]);_0xe317x72();_0xe317x6a();_0xe317x2e=  new _0xe317xa3();if(_0xe317xa9[_0x1a72[266]]!= _0x1a72[283]){for(var _0xe317x39=0;_0xe317x39< _0xe317xa9[_0x1a72[280]];_0xe317x39++){_0xe317x2e[_0x1a72[262]]( new _0xe317xa8(_0xe317xa9))}}else {for(var _0xe317x39=0;_0xe317x39< _0xe317xa9[_0x1a72[280]];_0xe317x39++){_0xe317xa9[_0x1a72[266]]= (_0xe317x39== 0)?_0x1a72[113]:_0xe317xd(_0xe317x60[_0x1a72[70]]([[225,_0x1a72[107]]]));_0xe317x2e[_0x1a72[262]]( new _0xe317xa8(_0xe317xa9))}};_0xe317x2e[_0x1a72[261]]();_0xe317x2e[_0x1a72[220]][_0x1a72[13]](function(_0xe317x52){_0xe317x73(_0xe317x52);_0xe317x61(_0xe317x52)});_0xe317x2d[_0x1a72[192]]();_0xe317x88()})})
+﻿document.addEventListener("DOMContentLoaded", function () {
+	////VARIOUS CONVENIENT FUNCTIONS
+	function create(parent, tagName, className) {
+		var e = document.createElement(tagName);
+		e.className = className;
+		if (parent) {
+			parent.append(e);
+		}
+		return e;
+	}
+
+	function mapRange(value, sourceMin, sourceMax, destMin, destMax) {
+		return (value - parseFloat(sourceMin)) / (parseFloat(sourceMax) - parseFloat(sourceMin)) * (parseFloat(destMax) - parseFloat(destMin)) + parseFloat(destMin);
+	}
+
+	function mapRandom(destMin, destMax) {
+		return mapRange(Math.random(), 0.0, 1.0, destMin, destMax);
+	}
+
+	function getRandomWithProbabilities(a) {
+		var total = 0;
+		for (var one of a) {
+			total += parseFloat(one[0]);
+		}
+		var r = Math.random() * total;
+		total = 0; //Could use a different variable.
+		for (var one of a) {
+			total += parseFloat(one[0]);
+			if (r < total) {
+				return one[1];
+			}
+		}
+		return a[0][1]; //Hopefully not needed.
+	}
+
+	function clampTextboxValue(selector, minValue, maxValue) {
+		var limit = maxValue;
+		if (selector === ".val-count") {
+			document.querySelector(".val-type").addEventListener("change", function () {
+				limit = getJadinkoTypeLimit();
+				document.querySelector(".val-count").value = Math.min(document.querySelector(".val-count").value, limit);
+			});
+		}
+		document.querySelectorAll(selector).forEach(function (textbox) {
+			textbox.addEventListener("focusout", function () {
+				this.value = clamp(this.value, minValue, limit);
+			});
+		});
+	}
+
+	function cmToFeetAndInches(cm) {
+		var inches = cm / 2.54;
+		var feet = Math.floor(inches / 12);
+		inches = Math.round(inches % 12);
+		return feet + "ft " + inches + "in";
+	}
+
+	function generateValue(maxValue, defaultValue) {
+		var value = Math.random() * maxValue;
+		var deviation = Math.abs(defaultValue - value) / (maxValue / 100);
+		var probability = Math.pow(0.9, deviation);
+		var iteration = 0;
+		const maxIterations = 10000;
+		while (Math.random() > probability) {
+			value = Math.random() * maxValue;
+			if (value > maxValue) {
+				value = defaultValue;
+			}
+			deviation = Math.abs(defaultValue - value) / (maxValue / 100);
+			probability = Math.pow(0.9, deviation);
+			iteration++;
+			if (iteration >= maxIterations) {
+				break;
+			}
+		}
+		return iteration < maxIterations ? value : defaultValue;
+	}
+
+	//Math related.
+	function distance(posA, posB) {
+		var v = { x: posA.x - posB.x, y: posA.y - posB.y };
+		return Math.sqrt(v.x * v.x + v.y * v.y);
+	}
+	function getRandomPosAtDistanceFrom(center, distanceMin, distanceMax, distancePow = 1.0) {
+		var angle = Math.random() * Math.PI * 2;
+		var random = Math.pow(Math.random(), distancePow);
+		var distance = distanceMax * random + distanceMin * (1.0 - random);
+		return { x: Math.sin(angle) * distance + center.x, y: Math.cos(angle) * distance + center.y }
+	}
+
+	////GLOBAL VARIABLES
+	var scene;
+	var hive = new JadinkoHive();
+
+	////CONSTANTS, UI AND STUFF
+
+	function getJadinkoTypeLimit() {
+		return { Worker: 150, Seedling: 225, Soldier: 45, Drone: 30, Queen: 1, Hive: 451 }[document.querySelector(".val-type").value] || -1;
+	}
+
+	var emptyTrait = { name: "None" };
+	"wsamfptlcveih".split("").forEach(function (a) {
+		emptyTrait[a + "Mult"] = 1.0;
+	});
+
+	clampTextboxValue(".val-mutation", 0, 100);
+	clampTextboxValue(".val-luminous", 0, 25);
+	clampTextboxValue(".val-count", 1, getJadinkoTypeLimit());
+	clampTextboxValue(".val-multitrait", -20, 60);
+
+	document.querySelectorAll(".val-mutation, .val-luminous, .val-multitrait, .val-count").forEach(function (textbox) {
+		var regex = /^(-?0|-?[1-9]\d*|\b)$|^$/;
+		textbox.addEventListener("input", function (event) {
+			var target = event.target;
+			var input = target.value;
+			if (!regex.test(input)) {
+				target.value = target.value.slice(0, -1);
+			}
+		});
+		textbox.addEventListener("paste", function (event) {
+			var pasteData = event.clipboardData.getData('text');
+			if (!regex.test(pasteData)) {
+				event.preventDefault();
+			}
+		});
+	});
+
+	document.querySelectorAll(".tabs").forEach(function (container) {
+		var tabs = [];
+		container.querySelectorAll(".tab").forEach(function (element, i) {
+			tabs.push({ element: element, target: document.querySelector(element.getAttribute("data-sel")) });
+			element.addEventListener("click", function () {
+				selectTab(i);
+			});
+		});;
+		function selectTab(i) {
+			tabs.forEach(function (tab, j) {
+				tab.element.classList.toggle("tab-active", i == j);
+				tab.target.style.display = (i == j) ? "" : "none";
+			});
+		}
+		selectTab(0);
+	});
+
+	//Traits stuff.
+
+	function prepTraits(str) {
+		str = str.replace(/;/g, "\n").replace(/:/g, ",");
+		return str.split("\n").map(function (a) {
+			a = a.split(",");
+			var result = { name: a[0].trim() };
+			"wsamfptlcveih".split("").forEach(function (a) {
+				result[a + "Mult"] = 1.0;
+			});
+			for (var i = 1; i < a.length; i++) {
+				var b = ("" + a[i]).trim();
+				var what = b[0];
+				var value = b.substr(1);
+				result[what + "Mult"] = parseFloat(value);
+			}
+			return result;
+		});
+	}
+	function cleanTraitsWithContradictions(arr, itemsToRemove, cont) {
+		itemsToRemove = (Array.isArray(itemsToRemove) ? itemsToRemove : [itemsToRemove]).map(item => item.name);
+		var relevantCont = itemsToRemove.concat(...cont.filter(contItem => contItem.find(a => itemsToRemove.includes(a))));
+		return arr.filter(arrItem => (!relevantCont.find(contItem => contItem == arrItem.name)));
+	}
+
+	var contradictions = `Big Boned:Lithe
+Butterface:Handsome
+Evil:Good
+Fussy Eater:Regular
+Genetic Mutation:Good Breeding
+Genius:Nice but Dim
+Giver:Taker
+Immune:Sickly
+Insane:Joyful
+Limited Efficiency:Robust
+Loyal:Surly
+Old at Heart:Young at Heart
+Plain:Handsome
+Producer:Stingy
+Sickly:Immune
+Slowpoke:Hyperactive
+Smelly:Sparkling
+Stingy:Producer
+Studly:Butterface
+Sullen:Jovial
+Surly:Loyal
+Virile:Sickly
+Whimsical:Enigmatic
+Constipated:Regular
+Genetic Inferiority:Golden Gift
+Genetic Instability:Good Breeding
+Glistening:Smelly
+Golden Gift:Genetic Inferiority
+Good Breeding:Genetic Instability
+Mysterious:Enigmatic
+Perfected:Nice but Dim
+Prize Specimen:Freak of Nature
+Radiant:Smelly
+Stressed:Regular
+Strong Genes:Genetic Inferiority
+Unlucky for Some:Lucky`.split("\n").map(a => a.split(":"));
+
+	const visualTraitsSlots = [];
+	visualTraitsSlots.push(prepTraits(`Missing patches of skin;Parasites:f0.8;Brown lumps on body;Wrinkly skin;Severe scarring
+Missing vines:p0.8;Leaking resin:p0.8;Open wounds;Fungal growths;Missing teeth,l0.8;Extra eye
+Extra arm;Extra leg;Assymetry;Malignant atavism`));
+
+	visualTraitsSlots.push(prepTraits(`Minor wounds;Discoloration;Missing tailtip:t0.9,l0.9;Overbite:i0.9;Damaged vines:p0.9,t0.9
+Extra vines:p0.9,t0.9;Extra finger:i0.9;Extra toe:i0.9;Crooked teeth:i0.9;Mites
+Excessive salivation;Longer tongue:i0.9;Shorter tail:t0.9,l0.9;Shorter limbs:t0.9,l0.9;Straighter posture:l0.9,t1.1`));
+
+	visualTraitsSlots.push(prepTraits(`Minor scarring;Dappling on face;Dappling around shoulders;Larger claws;Small horns
+Dappling around hips;Neoteny;Quadruped posture;Dappling on thighs;Dewclaws on feet`));
+
+	visualTraitsSlots.push(prepTraits(`Leaves on vines:v1.1,e1.1;Leaves on tail:v1.1,e1.1;Glossy skin;Bright eyes;Toned:c1.1,w1.1
+Thicker thighs:s1.1,v1.1;Longer tail;Stronger teeth;Vibrant coloration`));
+
+	visualTraitsSlots.push(prepTraits(`Iridescent skin;Colorful frills;Vivid coloration;Big head frill:p1.2,a1.1,e1.1;Thicker arms:c1.3
+Wing-like vine frills;Crown-like headcrest:e1.1;Leaf cape:e1.2;Honey golden eyes;Bioluminescent spots
+Feathered leaf margins;Benign atavism`));
+
+	var handicaps = prepTraits(
+		`Anxiety:e0.8,i0.9,h0.7;Limp:s0.8,t0.9,l1.1;ADHD:v0.9,e0.8,i0.7;Cataracts:i0.8
+Presbycusis:i0.8,e0.7;Dyspraxia:v0.9,e0.8,i0.7;Bradyphrenia:i0.8,e0.7
+Muscular Dystrophy:c0.9,s0.8,t0.9;Primary Immune Deficiency:h0.8
+Short Term Memory Loss:i0.9,e0.8;Long Term Memory Loss:i0.8,e0.8;Epilepsy:i0.9,e0.8,h0.7
+Blindness:i0.8;Deafness:i0.8;Arthritis:c0.9,s0.8,t0.9;Depression:e0.8,i0.9,h0.7;Parkinson's Syndrome:v0.9,e0.8,h0.8`);
+	//"wsamfptlcveih"
+	var traitsAll = prepTraits(
+		`Big Boned:w1.1,l1.2,c1.3;Butterface:w1.1,s1.1,a0.9;Chatty:e1.1
+Curvy:w1.1,s0.9,a1.1;Enigmatic:i1.1;Evil:e0.9
+Fearless:c1.2;Fussy Eater:w0.9,f0.9;Genetic Mutation:i1.2
+Genius:i1.5;Giver:f1.1;Good
+Handsome:a1.1;Hyperactive:s1.1,v1.2;Immune:h1.3
+Insane:i0.9;Jovial:e1.2;Joyful
+Limited Efficiency:c0.9;Lithe:w0.9,s1.1,a1.1,l1.1,v1.2;Lucky:f1.2
+Loyal;Nightmare:a0.8,i0.8;Old at Heart:m1.1
+Plain:a0.9;Producer:p1.3;Robust:h1.2
+Sickly:h0.9;Slowpoke:s0.9,v0.9;Smelly:a0.9
+Sparkling;Stingy:f0.9;Studly:t1.3,l1.3,c1.4
+Sullen:e0.8;Surly:i0.8;Taker:f0.8
+Virile:f1.3,p1.3;Whimsical:i1.2;Young at Heart:m0.9`);
+
+	var traitsSlots = [];
+	traitsSlots.push(traitsAll.concat(prepTraits(
+		`Constipated:h0.8;Genetic Inferiority:i0.8,h0.8;Regular;Stressed:h0.9`)));
+
+	traitsSlots.push(traitsAll.concat(prepTraits(
+		`Charmed;Genetic Inferiority:i0.8,h0.8;Genetic Instability:i0.9
+Glistening;Golden Gift;Good Breeding:h1.3
+Mysterious:f1.2,i1.1;Perfected:w1.1,s1.1,a1.1,m1.1,f1.1,p1.1,t1.1,l1.1,c1.1,v1.1,e1.1,i1.1,h1.1;Ravensworn:m1.1,e1.2,h1.1
+Stressed:h0.9;Strong Genes:i1.2;Unlucky for Some:f0.9,p0.9,h0.9`)));
+
+	traitsSlots.push(traitsAll.concat(prepTraits(
+		`Charmed;Exalted:i1.1;Fortunate:l1.1,c1.1
+Freak of Nature:l1.2,c1.2,e1.2;Genetic Instability:f0.8,p0.8,t0.8,l0.8,c0.8,e0.9,i0.9,h0.9;Glistening:t1.1,l1.1,c1.1,e1.1,i1.1,h1.1
+Golden Gift;Good Breeding;Mysterious:f1.2,i1.1
+Nice but Dim:i0.9;Perfected;Prize Specimen:w1.2,s1.2,a1.2,m1.2,f1.2,p1.2,t1.2,l1.2,c1.2,v1.2,e1.2,i1.2,h1.2
+Radiant:f1.1;Ravensworn:m1.1,e1.2;Unlucky for Some:f0.9,p0.9,h0,9`)));
+
+	traitsAll.find(a => a.name == "Butterface").aLimitHigh = 1200;
+	traitsAll.find(a => a.name == "Handsome").aLimitLow = 1200;
+	traitsAll.find(a => a.name == "Nightmare").aLimitHigh = 800;
+	traitsAll.find(a => a.name == "Plain").aLimitHigh = 1200;
+	traitsAll.find(a => a.name == "Plain").aLimitLow = 800;
+	traitsAll.find(a => a.name == "Immune").hLimitLow = 100;
+
+	function pickRandomTrait(traits) {
+		return traits[parseInt(Math.random() * traits.length)] || emptyTrait;
+	}
+
+	function pickRandomVisualTrait(jadinko, traits) {
+		var traitPool = traits[Math.floor(clamp(jadinko.attractiveness, 0, 1999) / 400)];
+		var odds = 10 + (0.05 * Math.abs(1000 - jadinko.attractiveness));
+
+		return ((Math.random() < (odds / 100)) ? traitPool[Math.floor(Math.random() * traitPool.length)] : undefined) || emptyTrait;
+	}
+
+	function clamp(value, min, max) {
+		value = (typeof (min) != "undefined") ? Math.max(value, min) : value;
+		value = (typeof (max) != "undefined") ? Math.min(value, max) : value;
+		return value;
+	}
+
+	//Job stuff.
+	var jadinkoJobs = [];
+	function addJadinkoJob(jobName, jobRanges) {
+		var job = { name: jobName, ranges: {} };
+		jobRanges.split(", ").forEach((range, i) => job.ranges[["length", "height", "weight", "speed", "age", "pollenFluid", "liftingCapacity", "iq", "activity"][i]] = range.split("-").map(a => parseFloat(a)));
+		jadinkoJobs.push(job);
+		return job;
+	}
+	addJadinkoJob("Worker", "150-180, 75-90, 5000-7000, 15-30, 20-22, 3-11, 4-12, 40-80, 40-50");
+	addJadinkoJob("Seedling", "85-100, 55-60, 4000-6000, 8-16, 0-20, 0-0, 1-3, 10-30, 20-30");
+	addJadinkoJob("Soldier", "300-350, 150-175, 170000-205000, 12-24, 20-360, 0-0, 200-300, 60-100, 15-25");
+	addJadinkoJob("Drone", "300-350, 150-175, 172000-208000, 15-30, 20-360, 67-242, 210-330, 60-90, 15-25");
+	addJadinkoJob("Queen", "250-270, 320-350, 500000-700000, 0-0, 360-600, 0-0, 500-700, 80-140, 60-60");
+	function findJadinkoJob(jobName) {
+		for (var job of jadinkoJobs) {
+			if (job.name == jobName) {
+				return job;
+			}
+		}
+	}
+
+	//Our chances.
+	var workerTypeChances = (`15:Common
+7:Shadow
+9:Igneous
+13:Cannibal
+10:Aquatic
+10:Amphibious
+11:Carrion
+12:Diseased
+11:Camouflaged
+5:Draconic
+0.33:Saradomin
+0.33:Guthix
+0.33:Zamorak`).split("\n").map(function (a) {
+		return a.trim().split(":")
+	});
+
+	var hiveChances = (`150:Worker
+45:Soldier
+30:Drone`).split("\n").map(function (a) {
+		return a.trim().split(":")
+});
+	////CARD STUFF
+	function outputJadinkoToCards(jadinko) {
+		var cards = document.querySelector(".cards-container");
+		card = createJadinkoCard(jadinko);
+		cards.append(card);
+	}
+
+	function createJadinkoCard(jadinko) {
+		jadinko = prepareJadinkoForTable(jadinko);
+		var row = create(undefined, "div", "card");
+		//I am using $ here just to more easily add additional stuff like "Top Speed = ".
+		//Also, not using ":$" for those that should be shown raw, the "$" is added automatically later.
+		jadinkoDatagridColumns.forEach(function (column) {
+			var a = column.split(":");
+			var b = a[1].split("@");
+			//This adds the second part. It's easier this way than checking their count later.
+			if (a.length < 3) {
+				a.push("$");
+			}
+			//a[0] would have strings like "workerType", "trait1", etc. jadinko[a[0]] retrieves the wanted property.
+			var cell = create(row, "div", "prop" + ((b.length > 1) ? " num" : ""));
+			var cell1 = create(cell, "span", "prop-name");
+			var cell2 = create(cell, "span", "prop-value");
+			cell1.innerText = b[0] + ": ";
+			cell2.innerText = a[2].replace("$", (jadinko[a[0].trim()] === undefined) ? "None" : jadinko[a[0].trim()]);
+		});
+		row.addEventListener("click", function (e) {
+			var sel = window.getSelection();
+			var range = document.createRange();
+			range.selectNodeContents(this);
+			if (!e.shiftKey) {
+				sel.removeAllRanges();
+			}
+			sel.addRange(range);
+		});
+		return row;
+	}
+
+	function clearJadinkoCards() {
+		document.querySelectorAll(".cards-container .card").forEach(function (row, i) {
+			row.remove();
+		});
+	}
+
+
+	////DATAGRID STUFF
+	//"@" now means right-aligned.
+	var jadinkoDatagridColumns =
+		(`age:Age
+	job:Type
+	traits:Traits
+	attractiveness:Attractiveness@
+	fertility:Fertility@
+	pollenFluid:Pollen Fluid Production@
+	handicap:Handicap
+	visualTraits:Visual Traits
+	height:Height@
+	length:Length@
+	weight:Weight@
+	speed:Top Speed@
+	liftingCapacity:Lifting Capacity@
+	activity:Activity@:$ min/hr
+	energy:Energy@:$ hrs/day
+	iq:IQ@
+	health:Health@`).split("\n");
+	var datagridFirstRow = create(document.querySelector(".datagrid"), "tr", "");
+	jadinkoDatagridColumns.forEach(function (column) {
+		var a = column.split(":");
+		var b = a[1].split("@");
+		var cell = create(datagridFirstRow, "th", "");
+		cell.innerText = b[0];
+	});
+	function prepareJadinkoForTable(jadinko) {
+		var result = {};
+		var healthTraits = `20:Weight loss
+30:Vomiting
+40:Coughing
+50:Sneezing
+60:Runny nose
+70:Eye/ear discharge
+40:Skin infection
+50:Swelling
+30:Anemia
+40:Abscesses
+60:Discharge from orifices`.split("\n").map(a => a.split(":"));
+		var looks = `2100:Perfect
+2000:Divine
+1900:Stunning
+1700:Gorgeous
+1500:Beautiful
+1300:Good Looking
+1100:Attractive
+900:Average
+700:Ordinary
+500:Below Average
+300:Unattractive
+100:Ugly
+0:Hideous`.split("\n").map(a => a.split(":"));
+		result.job = ((jadinko.isMutated ? "Mutated " : "") + jadinko.gender + " " + (jadinko.job.name == "Seedling" ? "Seedling\n(" + jadinko.jobAffinity.name + (jadinko.jobAffinity.name == "Worker" ? ", " + jadinko.workerType : "") + ")" : jadinko.job.name + (jadinko.job.name == "Worker" ? ", " + jadinko.workerType : "")));
+		result["traits"] = jadinko.traits.filter(a => a.name != "None").map(trait => "• " + trait.name).join("\n") || "None";
+		result["handicap"] = jadinko.handicap.name;
+		result["visualTraits"] = jadinko.visualTraits.filter(a => a.name != "None").map(trait => "• " + trait.name).join("\n") || "None";
+		["gender", "pollenFluid"].forEach(a => result[a] = jadinko[a]);
+		["age", "length", "height", "weight", "speed", "energy", "liftingCapacity", "iq", "activity"].forEach(function (a) {
+			result[a] = parseInt(jadinko[a]);
+		});
+		result["attractiveness"] = looks.filter(a => jadinko.attractiveness >= parseInt(a[0])).map(a => a[1])[0];
+		result["health"] = healthTraits.filter(a => jadinko.health < a[0]).map(a => "• " + a[1]).join("\n") || "• Healthy"
+		result["fertility"] = jadinko.fertility.toFixed(0) + (jadinko.pregnant ? "% (Pregnant)" : "%");
+		result["age"] = (result["age"] < 30) ? (result["age"] + " months") : ((result["age"] / 12).toFixed(0) + " years");
+		result["weight"] = (jadinko["weight"] / 1000).toFixed(3);
+		var isMetric = document.querySelector(".val-metric").checked;
+		result["height"] = isMetric ? result["height"] + " cm" : cmToFeetAndInches(result["height"]);
+		result["length"] = isMetric ? result["length"] + " cm" : cmToFeetAndInches(result["length"]);
+		result["weight"] = isMetric ? result["weight"] + " kg" : (result["weight"] * 2.20462).toFixed(3) + " lbs";
+		result["speed"] = isMetric ? result["speed"] + " km/h" : parseInt(result["speed"] * 0.621371) + " mph"
+		result["pollenFluid"] = !jadinko.fertileMale ? "" : result["pollenFluid"].toFixed(1) + " mL";
+		result["liftingCapacity"] = isMetric ? result["liftingCapacity"] + " kg" : (result["weight"] * 2.20462).toFixed(3) + " lbs";
+		if (jadinko.job.name == "Queen")
+			result["weight"] = "Unknown";
+		return result;
+	}
+	function clearJadinkoDatagrid() {
+		document.querySelectorAll(".datagrid tr").forEach(function (row, i) {
+			if (i > 0) {
+				row.remove();
+			};
+		});
+	}
+	function outputJadinkoToDatagrid(jadinko) {
+		jadinko = prepareJadinkoForTable(jadinko);
+		var datagrid = document.querySelector(".datagrid");
+		var row = create(datagrid, "tr", "");
+		//I am using $ here just to more easily add additional stuff like "Top Speed = ".
+		//Also, not using ":$" for those that should be shown raw, the "$" is added automatically later.
+		jadinkoDatagridColumns.forEach(function (column) {
+			var a = column.split(":");
+			var b = a[1].split("@");
+			//This adds the second part. It's easier this way than checking their count later.
+			if (a.length < 3) {
+				a.push("$");
+			}
+			//a[0] would have strings like "workerType", "trait1", etc. jadinko[a[0]] retrieves the wanted property.
+			var valueToShow = a[2].replace("$", (jadinko[a[0].trim()] === undefined) ? "None" : jadinko[a[0].trim()]);
+			var cell = create(row, "td", (b.length > 1) ? "num" : "");
+			cell.innerText = valueToShow;
+		});
+	}
+
+	////SCENE
+	function Scene() {
+		this.canvas = document.querySelector(".scene");
+		this.canvasCenter = { x: this.canvas.width / 2.0, y: this.canvas.height / 2.0 };
+		this.pos = { x: this.canvasCenter.x, y: this.canvasCenter.y };
+		this.context = this.canvas.getContext("2d");
+		this.zoomRaw = 1.0;
+		this.zoom = 1.0;
+		this.settings = {};
+		this.updatePos();
+	}
+	Scene.prototype.resetPos = function () {
+		this.pos = { x: this.canvasCenter.x, y: this.canvasCenter.y };
+		this.zoomRaw = 1.0;
+		this.zoom = 1.0;
+		this.updatePos();
+	}
+	Scene.prototype.updatePos = function () {
+		//I really don't understand this. Seems to work.. Somehow...
+		this.drawOff1 = { x: -this.pos.x, y: -this.pos.y };
+		this.drawOff2 = { x: this.canvasCenter.x, y: this.canvasCenter.y };
+	}
+	scene = new Scene();
+
+	////SCENE, CONTROLS
+	document.querySelector(".scene").addEventListener("wheel", function (event) {
+		scene.zoomRaw = Math.max(scene.zoomRaw + -event.deltaY / 1000.0, 0.3);
+		scene.zoom = Math.pow(scene.zoomRaw, 2);
+		event.preventDefault();
+		drawScene();
+	});
+	document.querySelector(".scene").addEventListener("mousedown", function (event) {
+		if (event.button == 0) {
+			var startM = { x: event.pageX, y: event.pageY };
+			var startPos = { x: scene.pos.x, y: scene.pos.y };
+			function move(event) {
+				var diff = { x: event.pageX - startM.x, y: event.pageY - startM.y };
+				scene.pos.x = startPos.x - diff.x / scene.zoom;
+				scene.pos.y = startPos.y - diff.y / scene.zoom;
+				scene.updatePos();
+				drawScene();
+			}
+			document.addEventListener("mousemove", move);
+			document.addEventListener("mouseup", function () {
+				document.removeEventListener("mousemove", move);
+			});
+		}
+		if (event.button == 1) {
+			event.preventDefault();
+			scene.resetPos();
+			drawScene();
+		}
+	});
+	document.querySelector(".val-healthbar").addEventListener("change", function () {
+		scene.settings.health = this.checked;
+		drawScene();
+	});
+	scene.settings.health = document.querySelector(".val-healthbar").checked;
+	var floatingCard;
+	window.addEventListener("click", function () {
+		if (floatingCard) {
+			var sel = window.getSelection();
+			var range = document.createRange();
+			range.selectNodeContents(floatingCard);
+			sel.removeAllRanges();
+			sel.addRange(range);
+		}
+	});
+	var lastJadinko;
+	function setJadinkoHovered(jadinko, pos, rawPos) {
+		if (jadinko == lastJadinko) {
+			if (floatingCard) {
+				floatingCard.style.transform = `translate(${rawPos.x}px, ${rawPos.y}px)`;
+			}
+			return;
+		}
+		if (floatingCard) {
+			floatingCard.remove();
+			floatingCard = false;
+		}
+		if (lastJadinko) {
+			lastJadinko.isHovered = false;
+		}
+		lastJadinko = jadinko;
+		if (jadinko) {
+			jadinko.isHovered = true;
+			floatingCard = createJadinkoCard(jadinko);
+			floatingCard.classList.add("floating");
+			floatingCard.style.transform = `translate(${rawPos.x}px, ${rawPos.y}px)`;
+			document.body.append(floatingCard);
+		}
+		drawScene();
+	}
+	window.addEventListener("mousemove", function (event) {
+		sceneAnalyzeMouseEvent(event);
+	});
+	function sceneAnalyzeMouseEvent(event) {
+		var isAtScene = event.target.classList.contains("scene");
+		var rawPos = { x: event.pageX, y: event.pageY };
+		var rect = scene.canvas.getBoundingClientRect();
+		var scenePos = {};
+		scenePos.x = (rawPos.x - rect.left) / rect.width * scene.canvas.width;
+		scenePos.y = (rawPos.y - rect.top) / rect.height * scene.canvas.height;
+		//Now it's in the range of 0-scene.canvas.width, etc
+		scenePos.x = (scenePos.x - scene.drawOff2.x) / scene.zoom - scene.drawOff1.x;
+		scenePos.y = (scenePos.y - scene.drawOff2.y) / scene.zoom - scene.drawOff1.y;
+		scenePos.isInside = isAtScene;
+		sceneOnMousePosMove(scenePos, rawPos);
+	}
+	function sceneOnMousePosMove(pos, rawPos) {
+		if (pos.isInside) {
+			var theJadinko;
+			for (var i = hive.jadinkos.length - 1; i >= 0; i--) {
+				var jadinko = hive.jadinkos[i];
+				var d = distance(pos, jadinko.pos);
+				var visualJadinkoRadius = 0.1 * jadinko.height;
+				if (d < (2 + visualJadinkoRadius)) {
+					theJadinko = jadinko;
+					break;
+				}
+			}
+			setJadinkoHovered(theJadinko, pos, rawPos);
+		} else {
+			setJadinkoHovered(undefined, pos);
+		}
+	}
+
+	////SCENE, RENDERING
+	function drawScene() {
+		clearScene();
+		drawHive(hive);
+	}
+
+	function clearScene() {
+		scene.context.clearRect(0, 0, scene.canvas.width, scene.canvas.height);
+	}
+	function sceneDrawSomething(scene, width, color = "#000", alpha = 1.0) {
+		scene.context.globalAlpha = alpha;
+		if (width == "f") {
+			scene.context.fillStyle = color;
+			scene.context.fill();
+		} else {
+			scene.context.lineWidth = width;
+			scene.context.strokeStyle = color;
+			scene.context.stroke();
+		}
+		scene.context.globalAlpha = 1.0;
+	}
+	function sceneDrawArc(scene, x, y, radius, start, end, width, color = "#000", alpha = 1.0, ignoreZoomScale = false) {
+		x = (x + scene.drawOff1.x) * scene.zoom + scene.drawOff2.x;
+		y = (y + scene.drawOff1.y) * scene.zoom + scene.drawOff2.y;
+		radius *= ignoreZoomScale ? 1.0 : scene.zoom;
+		scene.context.beginPath();
+		scene.context.arc(x, y, radius, 2 * Math.PI * start, 2 * Math.PI * end);
+		sceneDrawSomething(scene, width, color, alpha);
+	}
+	function sceneDrawRect(scene, x, y, w, h, width, color = "#000", alpha = 1.0, ignoreZoomScale = false) {
+		x = (x + scene.drawOff1.x) * scene.zoom + scene.drawOff2.x;
+		y = (y + scene.drawOff1.y) * scene.zoom + scene.drawOff2.y;
+		w *= ignoreZoomScale ? 1.0 : scene.zoom;
+		h *= ignoreZoomScale ? 1.0 : scene.zoom;
+		scene.context.beginPath();
+		scene.context.rect(x, y, w, h);
+		sceneDrawSomething(scene, width, color, alpha);
+	}
+	function drawHive(hive) {
+		sceneDrawArc(scene, hive.center.x, hive.center.y, hive.size, 0, 1, "f", "#F8F8F8");
+		sceneDrawArc(scene, hive.center.x, hive.center.y, hive.size, 0, 1, 5, "#F0F0F0");
+		sceneDrawArc(scene, hive.entrance.x, hive.entrance.y, 20.0, 0, 1, 3, "#000");
+		drawJadinkos(hive.jadinkos);
+	}
+
+	function drawJadinkos(jadinkos) {
+		var c = document.querySelector(".scene").getContext("2d");
+		//Jadinkos
+		jadinkos.forEach(function (jadinko) {
+			//scene.context.globalAlpha = 1.0;
+			//scene.context.beginPath();
+			var colors = {
+				Male: { Default: "#000", Seedling: "#484", Queen: "#808", Drone: "#88F", Soldier: "#FF3000" },
+				Female: { Default: "#444", Seedling: "#6A6", Queen: "#808", Drone: "#88F", Soldier: "#FF3000" },
+				Herm: { Default: "#222", Seedling: "#505", Queen: "#505", Drone: "#B0B0FF", Soldier: "#FF6347" }
+			};
+			var gender = (["Male", "Female", "Herm"].indexOf(jadinko.gender) != -1) ? jadinko.gender : "Male";
+			sceneDrawArc(scene, jadinko.pos.x, jadinko.pos.y, 0.1 * jadinko.height, 0, 1, "f", colors[gender][jadinko.job.name] || colors[gender]["Default"] || colors["Male"]["Default"], jadinko.isHovered ? 0.75 : 1.0);
+			if (jadinko.isHovered) {
+				sceneDrawArc(scene, jadinko.pos.x, jadinko.pos.y, 0.1 * jadinko.height, 0, 1, 3.0, "#000", 0.2);
+			}
+			if (jadinko.isMutated) {
+				sceneDrawArc(scene, jadinko.pos.x, jadinko.pos.y, 0.1 * jadinko.height, 0, 1, 3.0, "#840");
+			}
+		});
+		//Jadinkos' health
+		if (scene.settings.health) {
+			jadinkos.forEach(function (jadinko) {
+				var h = 2.0 / scene.zoom;
+				var ry = jadinko.pos.y - (0.1 * jadinko.height) - 8.0 / scene.zoom + h / 2.0;
+				var rw = 20.0 / scene.zoom;
+				var rw2 = rw * jadinko.health / 100.0;
+				var rx = jadinko.pos.x - rw / 2.0;
+				var rx2 = jadinko.pos.x - rw2 / 2.0;
+				sceneDrawRect(scene, rx, ry, rw, h, "f", "#888");
+				sceneDrawRect(scene, rx, ry, rw2, h, "f", "#800");
+				sceneDrawRect(scene, rx, ry, rw2, h, "f", "#0F0", Math.min(jadinko.health / 100.0 * 0.8, 1.0));
+				sceneDrawRect(scene, rx + rw, ry, 1.0 / scene.zoom, h, "f", "#222");
+			});
+		}
+	}
+
+	////HIVE OBJECT
+
+	function JadinkoHive() {
+		this.jadinkos = [];
+		this.center = { x: 400.0, y: 400.0 }
+		this.size = 400.0;
+		this.rooms = {}; //It's an object, so properties can be referenced by names. Perhaps there should be multiple nurseries later...
+		this.rooms.nursery = { x: 170, y: 600, size: 100.0 }
+		this.rooms.queensChamber = { x: 400, y: 650, size: 200.0 }
+		var entranceRandomness = 400.0;
+		this.entrance = { x: (Math.random() - 0.5) * entranceRandomness + this.center.x, y: 80.0 }
+	}
+	JadinkoHive.prototype.isPosDangerousForMutated = function (pos) {
+		if ((distance(pos, this.rooms.nursery) < this.rooms.nursery.size) || (distance(pos, this.rooms.queensChamber) < this.rooms.queensChamber.size)) {
+			return true;
+		}
+		for (jadinko of this.jadinkos) {
+			if ((jadinko.job.name == "Soldier") && (!jadinko.isMutated) && (distance(pos, jadinko.pos) < 80.0)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	JadinkoHive.prototype.hideMutated = function () {
+		for (var mutatedJadinko of this.jadinkos) {
+			if ((!mutatedJadinko.isMutated) || (mutatedJadinko.job.name == "Queen")) {
+				continue; //It's not mutated. Go away, healthy one!..
+			}
+			//Limiting attempts. Because otherwise it might freeze.
+			for (var i = 0; i < 50; i++) {
+				if (!this.isPosDangerousForMutated(mutatedJadinko.pos)) {
+					break; //Safe!
+				}
+				mutatedJadinko.pos = getRandomPosAtDistanceFrom({ x: 400.0, y: 400.0 }, 0.0, 1200.0, 1.0);
+			}
+		}
+	}
+	JadinkoHive.prototype.addJadinko = function (jadinko) {
+		this.jadinkos.push(jadinko);
+		jadinko.hive = this;
+		var r = getRandomPosAtDistanceFrom({ x: 400.0, y: 400.0 }, 0.0, 400.0, 0.5);
+		jadinko.pos = { x: r.x, y: r.y }
+		if (jadinko.job.name == "Seedling") {
+			var room = (Math.random() < 0.6) ? this.rooms.nursery : this.rooms.queensChamber;
+			var r = getRandomPosAtDistanceFrom({ x: room.x, y: room.y }, 0.0, room.size * 0.8, 8);
+			jadinko.pos = { x: r.x, y: r.y }
+		}
+		if ((jadinko.job.name == "Worker") && (Math.random() < 0.7)) {
+			var r = getRandomPosAtDistanceFrom({ x: 400.0, y: 400.0 }, 0.0, 800.0, 0.3);
+			jadinko.pos = { x: r.x, y: r.y };
+		}
+		if ((jadinko.job.name == "Worker")) {
+			if (Math.random() < 0.7) {
+				jadinko.pos = getRandomPosAtDistanceFrom(this.rooms.queensChamber, 0.0, 100.0, 0.5);
+			}
+			if (Math.random() < 0.7) {
+				jadinko.pos = getRandomPosAtDistanceFrom({ x: 400.0, y: 400.0 }, 0.0, 800.0, 0.3);
+			}
+		}
+		if ((jadinko.job.name == "Soldier") && (Math.random() < 0.1)) {
+			jadinko.pos = getRandomPosAtDistanceFrom(this.entrance, 0.0, 80.0, 0.5);
+		}
+		if (jadinko.job.name == "Drone") {
+			if (Math.random() < 0.80) { //20% total
+				jadinko.pos = getRandomPosAtDistanceFrom(this.rooms.nursery, 0.0, this.rooms.nursery.size * 0.5, 0.5);
+			}
+			if (Math.random() < 0.75) { //75% total, 25% for what is above
+				jadinko.pos = getRandomPosAtDistanceFrom(this.rooms.queensChamber, 0.0, this.rooms.queensChamber.size * 0.5, 0.5);
+			}
+		}
+		if (jadinko.job.name == "Queen") {
+			jadinko.pos = getRandomPosAtDistanceFrom({ x: 400.0, y: 755.0 }, 0.0, 10.0, 1.0)
+		}
+	}
+
+	////JADINKO OBJECT
+	function updateJadinkoGender(jadinko, gender) {
+		if ((Math.random() <= 0.001) || (gender == "Herm")) {
+			jadinko.gender = "Herm";
+			return; //No "else" then, somewhat cleaner.
+		}
+		switch (jadinko.jobAffinity.name) {
+			case "Queen":
+				jadinko.gender = "Female";
+				break;
+			case "Drone":
+			case "Soldier":
+				jadinko.gender = "Male";
+				break;
+			default:
+				jadinko.gender = (gender != "Random") ? gender : (Math.random() <= 0.5) ? "Male" : "Female";
+		}
+	}
+
+	function Jadinko(inputData) {
+		var jadinko = this;
+		var traitsSlotsDuplicate = traitsSlots.slice().map(a => a.slice());
+		jadinko.baseType = inputData.type;
+		jadinko.job = findJadinkoJob(inputData.type) || jadinkoJobs[1];
+		jadinko.jobAffinity = (jadinko.job.name == "Seedling") ? findJadinkoJob(getRandomWithProbabilities(hiveChances.concat([[0.045, "Queen"]]))) : jadinko.job;
+		//Should turn into actual worker type, not just a string.
+		jadinko.workerType = (inputData.breed != "Random") ? inputData.breed : getRandomWithProbabilities(workerTypeChances.concat([[0.097 * parseFloat(1 + ((inputData.luminous) * 0.01)), "Luminous"]]));
+		jadinko.traits = [pickRandomTrait(traitsSlotsDuplicate[0]), emptyTrait, emptyTrait];
+		if (Math.random() * (10 - (inputData.multitrait / 100)) <= 1) {
+			traitsSlotsDuplicate[1] = cleanTraitsWithContradictions(traitsSlotsDuplicate[1], jadinko.traits[0], contradictions);
+			traitsSlotsDuplicate[2] = cleanTraitsWithContradictions(traitsSlotsDuplicate[2], jadinko.traits[0], contradictions);
+			jadinko.traits[1] = pickRandomTrait(traitsSlotsDuplicate[1]);
+			if (Math.random() * (10 - (inputData.multitrait / 100)) <= 1) {
+				traitsSlotsDuplicate[2] = cleanTraitsWithContradictions(traitsSlotsDuplicate[2], jadinko.traits[1], contradictions);
+				jadinko.traits[2] = pickRandomTrait(traitsSlotsDuplicate[2]);
+			}
+		}
+		var handicapsDuplicate = cleanTraitsWithContradictions(handicaps.slice(), jadinko.traits, contradictions);
+		jadinko.handicap = (Math.random() * (125 - (inputData.multitrait / 100)) <= 1) ? pickRandomTrait(handicapsDuplicate) : emptyTrait;
+		jadinko.age = mapRandom(...jadinko.job.ranges.age);
+		jadinko.length = mapRandom(...jadinko.job.ranges.length);
+		jadinko.height = mapRandom(...jadinko.job.ranges.height);
+		jadinko.weight = mapRandom(...jadinko.job.ranges.weight);
+		jadinko.weight *= (jadinko.job.name == "Seedling") ? ({ Soldier: 3, Drone: 3, Queen: 6 }[jadinko.jobAffinity.name] || 1) : 1;
+		jadinko.speed = mapRandom(...jadinko.job.ranges.speed);
+		updateJadinkoGender(jadinko, inputData.gender);
+		jadinko.canBePregnant = (jadinko.gender != "Male") && (jadinko.job.name != "Seedling" && jadinko.job.name != "Soldier");
+		jadinko.fertility = (jadinko.job.name != "Seedling" && jadinko.job.name != "Soldier") ? (jadinko.job.name == "Queen") ? Math.max(generateValue(200, 100).toFixed(0), 50) : generateValue(200, 100).toFixed(0) : 0;
+		jadinko.attractiveness = mapRandom(0, 2001);
+		jadinko.liftingCapacity = mapRandom(...jadinko.job.ranges.liftingCapacity);
+		jadinko.iq = mapRandom(...jadinko.jobAffinity.ranges.iq);
+		jadinko.energy = generateValue(25, 16).toFixed(0);
+		jadinko.activity = mapRandom(...jadinko.job.ranges.activity);
+		jadinko.fertileMale = (jadinko.gender != "Female") && (jadinko.job.name != "Seedling" && jadinko.job.name != "Soldier");
+		jadinko.health = Math.max(generateValue(200, 100).toFixed(0), 1);
+		jadinko.health *= jadinko.attractiveness / 1000;
+		jadinko.isMutated = ((Math.random() * 100) < inputData.mutation) && !jadinko.traits.find(a => a.name == "Immune") ? true : false;
+		while (jadinko.traits.find(a => a.name == "Immune" && jadinko.workerType == "Diseased"))
+			jadinko.workerType = getRandomWithProbabilities(workerTypeChances.concat([[0.097 * parseFloat(1 + ((inputData.luminous) * 0.01)), "Luminous"]]));
+		jadinko.attractiveness *= (jadinko.workerType == "Diseased" ? 0.5 : 1) * (jadinko.isMutated ? 0.2 : 1);
+		if (jadinko.workerType == "Diseased")
+			jadinko.health = Math.min(jadinko.health, 50);
+		jadinko.pollenFluid = jadinko.fertileMale ? mapRandom(...jadinko.job.ranges.pollenFluid) : 0;
+		jadinko.pregnant = jadinko.canBePregnant && (jadinko.job.name == "Queen" || Math.random() < (((1 + jadinko.attractiveness * 0.04) * (jadinko.fertility / 100) / 800)));
+		if (jadinko.job.name == "Queen")
+			jadinko.health *= 1.05;
+		if (jadinko.pregnant && jadinko.job.name != "Queen") {
+			jadinko.speed *= 0.8;
+			jadinko.energy *= 0.9;
+			jadinko.weight *= 1.2;
+			jadinko.health *= 1.05;
+			jadinko.activity *= 0.95;
+			jadinko.liftingCapacity *= 0.9;
+		}
+		if (jadinko.traits.find(a => a.name == "Genius"))
+			jadinko.iq = Math.max(jadinko.iq, (jadinko.jobAffinity.ranges.iq[0] + jadinko.jobAffinity.ranges.iq[1]) / 2);
+		if (jadinko.traits.find(a => a.name == "Nice but Dim"))
+			jadinko.iq = Math.min(jadinko.iq, (jadinko.jobAffinity.ranges.iq[0] + jadinko.jobAffinity.ranges.iq[1]) / 2);
+		jadinko.traits.concat([jadinko.handicap]).forEach(function (trait) {
+			"speed=s,weight=w,attractiveness=a,age=m,fertility=f,pollenFluid=p,height=t,length=l,liftingCapacity=c,activity=v,energy=e,iq=i,health=h".split(",").map(a => a.split("=")).forEach(function (a) {
+				jadinko[a[0]] = clamp(jadinko[a[0]], trait[a[1] + "LimitLow"], trait[a[1] + "LimitHigh"]);
+				jadinko[a[0]] *= trait[a[1] + "Mult"];
+			});
+
+		});
+		var vTraitsSlotsDuplicate = cleanTraitsWithContradictions(visualTraitsSlots.slice().map(a => a.slice()), jadinko.traits.concat([jadinko.handicap]), contradictions);
+		jadinko.visualTraits = [emptyTrait, emptyTrait, emptyTrait];
+		for (var i = 0; i < 3; i++) {
+			jadinko.visualTraits[i] = pickRandomVisualTrait(jadinko, vTraitsSlotsDuplicate);
+			vTraitsSlotsDuplicate = vTraitsSlotsDuplicate.map(vTraits => cleanTraitsWithContradictions(vTraits, jadinko.visualTraits[i], contradictions));
+			if (jadinko.visualTraits[i].name == "None") {
+				break;
+			}
+		}
+		jadinko.visualTraits.forEach(function (trait) {
+
+			"speed=s,weight=w,attractiveness=a,age=m,fertility=f,pollenFluid=p,height=t,length=l,liftingCapacity=c,activity=v,energy=e,iq=i,health=h".split(",").map(a => a.split("=")).forEach(function (a) {
+				jadinko[a[0]] = clamp(jadinko[a[0]], trait[a[1] + "LimitLow"], trait[a[1] + "LimitHigh"]);
+				jadinko[a[0]] *= trait[a[1] + "Mult"];
+			});
+
+		});
+		jadinko.energy = Math.min(jadinko.energy, 24);
+		jadinko.activity = Math.min(jadinko.activity, 60);
+		return jadinko;
+	}
+
+////GENERATE BUTTON
+
+	//Here is what happens when the button is pressed
+	document.querySelector(".confirm").addEventListener("click", function () {
+		var inputData = {}
+
+		function prepareInputData(propName, selector, def = "") {
+			//This gets the value or the default.
+			inputData[propName] = document.querySelector(selector).value || def;
+		}
+		prepareInputData("count", ".val-count");
+		prepareInputData("type", ".val-type");
+		prepareInputData("gender", ".val-gender");
+		prepareInputData("breed", ".val-breed");
+		prepareInputData("luminous", ".val-luminous");
+		prepareInputData("multitrait", ".val-multitrait");
+		prepareInputData("mutation", ".val-mutation");
+
+		clearJadinkoDatagrid();
+		clearJadinkoCards();
+		hive = new JadinkoHive();
+		if (inputData.type != "Hive") {
+			for (var i = 0; i < inputData.count; i++) {
+				hive.addJadinko(new Jadinko(inputData));
+			}
+		} else {
+			for (var i = 0; i < inputData.count; i++) {
+				inputData.type = (i == 0) ? "Queen" : getRandomWithProbabilities(hiveChances.concat([[225, "Seedling"]]));
+				hive.addJadinko(new Jadinko(inputData));
+			}
+		}
+		hive.hideMutated();
+		hive.jadinkos.forEach(function (jadinko) {
+			outputJadinkoToDatagrid(jadinko);
+			outputJadinkoToCards(jadinko);
+		});
+		scene.resetPos();
+		drawScene();
+	});
+});
